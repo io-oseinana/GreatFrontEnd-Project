@@ -4,7 +4,7 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
-  background-image: linear-gradient(160deg, #F9FAFB 15%,  #D2D6DB 100%);
+  background-image: linear-gradient(160deg, #f9fafb 15%, #d2d6db 100%);
 }
 
 * {
@@ -15,17 +15,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 12.5rem;
   min-height: 100vh;
-  /* text-align: center; */
 }
 
 .testimonial_card {
   width: 21.25rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1.5rem;
-  box-shadow: 0px 4px 8px #D2D6DB;
-  border-radius: .5rem;
+  box-shadow: 0px 4px 8px #d2d6db;
+  border-radius: 0.5rem;
 }
 
 .avatar_profile {
@@ -49,7 +48,6 @@ main {
 .avatar_profile-username {
   font-size: 1rem;
   color: #525252;
-
 }
 
 .avatar_profile-name {
@@ -62,7 +60,6 @@ main {
   margin-top: 1.5rem;
   font-size: 1rem;
   color: #525252;
-
 }
 
 .credits {
