@@ -1,15 +1,68 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  background-image: linear-gradient(160deg, #F9FAFB 15%,  #D2D6DB 100%);
 }
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* text-align: center; */
+}
+
+.testimonial_card {
+  width: 21.25rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 8px #D2D6DB;
+  border-radius: .5rem;
+}
+
+.avatar_profile {
+  height: 3.0625rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar_profile img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.avatar_profile-details {
+  height: 3.0625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar_profile-username {
+  font-size: 1rem;
+  color: #525252;
+
+}
+
+.avatar_profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #171717;
+}
+
+.testimonial_card-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #525252;
+
 }
 
 .credits {
