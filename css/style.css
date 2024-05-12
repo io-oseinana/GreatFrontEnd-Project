@@ -164,7 +164,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 48rem) {
+@media screen and (min-width: 36.25rem) and (max-width: 64rem) {
   ._404-page {
     padding: 1rem;
   }
@@ -174,7 +174,7 @@ body {
   }
 }
 
-@media screen and (min-width: 20rem) and (max-width: 30rem) {
+@media screen and (min-width: 20rem) and (max-width: 37.5rem) {
   ._404-page {
     padding: 0.5rem;
   }
