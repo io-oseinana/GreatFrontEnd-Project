@@ -53,6 +53,11 @@ h4 {
 }
 
 /* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
@@ -63,6 +68,13 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
 }
 
 /* Anything that has been anchored to should have extra scroll margin */
