@@ -1,23 +1,24 @@
 :root {
-    --white-color: #FFFFFF;
-    --hover-white-color: #E6E6E6;
-    --blue-color: #4338cA;
-    --hover-blue-color: #3730A3;
-    --black-color: #171717;
-    --gray-color: #525252;
+  --white-color: #ffffff;
+  --hover-white-color: #e6e6e6;
+  --blue-color: #4338ca;
+  --hover-blue-color: #3730a3;
+  --black-color: #171717;
+  --gray-color: #525252;
 
-    --linear-page-gradient:  linear-gradient(
-      147.52deg,
-      rgba(249, 250, 251, 1) 0%,
-      rgba(210, 214, 219, 1) 100%
-    );
+  --linear-page-gradient: linear-gradient(
+    147.52deg,
+    rgba(249, 250, 251, 1) 0%,
+    rgba(210, 214, 219, 1) 100%
+  );
 
-    --font-size-normal: 1rem;
-    --font-weight-medium: 500;
-    --line-height-normal: 1.5rem;
-    
-    --border-radius-normal: .25rem;
-    --shadow-box: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1) ;
+  --font-size-normal: 1rem;
+  --font-weight-medium: 500;
+  --line-height-normal: 1.5rem;
+
+  --border-radius-normal: 0.25rem;
+  --shadow-box: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 /* Box sizing rules */
 *,
@@ -48,7 +49,7 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul:has(li), 
+ul:has(li),
 ol:has(li) {
   list-style: none;
 }
@@ -127,7 +128,7 @@ header {
 }
 
 .nav {
-  padding: .75rem;
+  padding: 0.75rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -144,11 +145,24 @@ header {
 .nav__list {
   display: flex;
   gap: 2rem;
-  
 }
 
 .nav__list li a {
+  padding: 0px 0.125rem;
   font-size: var(--font-size-normal);
+  border-radius: var(--border-radius-normal);
+
+  &:hover {
+    font-weight: var(--font-weight-medium);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  }
+
+  &:disabled {
+    color: #a3a3a3;
+  }
 }
 
 .nav_mobile,
@@ -171,34 +185,41 @@ header {
 }
 
 .btn {
-  padding: .625rem 1rem;
+  padding: 0.625rem 1rem;
   border-radius: var(--border-radius-normal);
   font-weight: var(--font-weight-medium);
   box-shadow: var(--shadow-box);
 }
 
-.nav_btn-desktop  .btn:nth-child(1) {
+.nav_btn-desktop .btn:nth-child(1) {
   color: var(--black-color);
   background-color: var(--white-color);
 
   &:hover {
-    color: #0A0A0A;
-    background-color: var(--hover-white-color)
+    color: #0a0a0a;
+    background-color: #fafafa
   }
 
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  }
+
+  &disabled {
+    background-color: #f5f5f5;
+    color: #a3a3a3;
+  }
 }
 
-.nav_btn-desktop  .btn:nth-child(2) {
+.nav_btn-desktop .btn:nth-child(2) {
   color: var(--white-color);
   background-color: var(--blue-color);
 
   &:hover {
     background-color: var(--hover-blue-color);
   }
-
 }
 
-@media (min-width: 20rem) and (max-width: 70.75rem){
+@media (min-width: 20rem) and (max-width: 70.75rem) {
   header {
     padding: 0 2rem;
     flex-direction: row;
@@ -216,17 +237,27 @@ header {
   .nav_btn-toggle-menu {
     display: flex;
     z-index: 1000;
+
+    &:hover {
+      font-weight: var(--font-weight-medium);
+    }
+
+    &:focus:nth-child(1),
+    &:focus svg:nth-child(2) {
+      border-radius: var(--border-radius-normal);
+      box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+    }
   }
 
   .nav_mobile.active {
-  position: fixed;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between  ;
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
-  background-color: var(--white-color);
-  padding: 1rem;
+    background-color: var(--white-color);
+    padding: 1rem;
     left: 0;
   }
 
@@ -238,36 +269,35 @@ header {
     justify-content: flex-start;
     top: 4.375rem;
     left: 3rem;
-}
-
-.nav_btn-mobile {
-  position: relative;
-  margin-bottom: 1rem ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-
-  button {
-    width: 20.4375rem;
-    height: 2.75rem;
-    box-shadow: var(--shadow-box);
-    border-radius: var(--border-radius-normal);
-    font-weight: var(--font-weight-medium);
   }
 
-  :nth-child(1) {
-    border: 1px solid var(--hover-white-color) ;
-    color: var(--black-color);
-    background-color: var(--white-color);
-  } 
+  .nav_btn-mobile {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
-  :last-child {
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    button {
+      width: 20.4375rem;
+      height: 2.75rem;
+      box-shadow: var(--shadow-box);
+      border-radius: var(--border-radius-normal);
+      font-weight: var(--font-weight-medium);
+    }
+
+    :nth-child(1) {
+      border: 1px solid var(--hover-white-color);
+      color: var(--black-color);
+      background-color: var(--white-color);
+    }
+
+    :last-child {
+      color: var(--white-color);
+      background-color: var(--blue-color);
+    }
   }
-}
-
 }
 .credits {
   color: #777;
