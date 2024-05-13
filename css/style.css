@@ -1,4 +1,24 @@
+:root {
+    --white-color: #FFFFFF;
+    --hover-white-color: #E6E6E6;
+    --blue-color: #4338cA;
+    --hover-blue-color: #3730A3;
+    --black-color: #171717;
+    --gray-color: #525252;
 
+    --linear-page-gradient:  linear-gradient(
+      147.52deg,
+      rgba(249, 250, 251, 1) 0%,
+      rgba(210, 214, 219, 1) 100%
+    );
+
+    --font-size-normal: 1rem;
+    --font-weight-medium: 500;
+    --line-height-normal: 1.5rem;
+    
+    --border-radius-normal: .25rem;
+    --shadow-box: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1) ;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -28,8 +48,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul:has(li), 
+ol:has(li) {
   list-style: none;
 }
 
@@ -94,6 +114,79 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  background-image: var(--linear-page-gradient);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 7rem;
+}
+
+.nav {
+  padding: .75rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 76rem;
+}
+
+.nav__logo {
+  width: 7rem;
+  height: 2rem;
+  margin-right: 6rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.nav__list li a {
+  font-size: var(--font-size-normal);
+}
+
+.nav_mobile,
+.nav_btn-toggle-menu {
+  display: none;
+}
+
+.nav_btn-desktop {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.btn {
+  padding: .625rem 1rem;
+  border-radius: var(--border-radius-normal);
+  font-weight: var(--font-weight-medium);
+  box-shadow: var(--shadow-box);
+}
+
+.nav_btn-desktop  .btn:nth-child(1) {
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  &:hover {
+    color: #0A0A0A;
+    background-color: var(--hover-white-color)
+  }
+
+}
+
+.nav_btn-desktop  .btn:nth-child(2) {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+
+  &:hover {
+    background-color: var(--hover-blue-color);
+  }
+
 }
 
 .credits {
