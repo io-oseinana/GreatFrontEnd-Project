@@ -1,19 +1,19 @@
 :root {
-  --white: #FFFFFF;
-  --blue-dark: #4338CA;
-  --blue: #6366F1;
+  --white: #fff;
+  --blue-dark: #4338ca;
+  --blue: #6366f1;
   --black: #171717;
-  --red-dark: #991B1B;
-  --red: #DC2626;
-  --red-light: #FEF2F2;
-  --green: #15803D;
-  --green-light: #F0FDF4;
+  --red-dark: #991b1b;
+  --red: #dc2626;
+  --red-light: #fef2f2;
+  --green: #15803d;
+  --green-light: #f0fdf4;
   --gray-dark: #525252;
   --gray: #737373;
-  --gray-light: #A3A3A3;
-  --gray-extra-light: #E6E6E6;
-  --gray-ultra-light: #FAFAFA;
-  --background: linear-gradient(147.52deg, #F9FAFB 0%, #D2D6DB 100%);
+  --gray-light: #a3a3a3;
+  --gray-extra-light: #e6e6e6;
+  --gray-ultra-light: #fafafa;
+  --background: linear-gradient(147.52deg, #f9fafb 0%, #d2d6db 100%);
 }
 
 /* Box sizing rules */
@@ -107,8 +107,18 @@ button {
 
 body {
   margin: 0;
-  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
 }
