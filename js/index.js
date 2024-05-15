@@ -7,6 +7,39 @@ const validEmail = (email) => {
   return reg.test(String(email).toLowerCase());
 };
 
+const notification = document.querySelector('.toast-notification');
+const messageText = document.querySelector('.message');
+const badgeText = document.querySelector('.badge-text');
+
+const notifySuccess = (badgeText, messageText) => {
+  badgeText.textContent = 'Success';
+  badgeText.classList.add('success');
+
+  messageText.textContent = 'Subscription successful! Please check your email to confirm.';
+  messageText.classList.add('success');
+
+  notification.style.opacity = '1';
+  notification.classList.add('success');
+  setTimeout(() => {
+    notification.remove();
+  }, 3000);
+};
+
+const notifyError = (badgeText, messageText) => {
+  badgeText.textContent = 'Error';
+  badgeText.classList.add('failure');
+
+  messageText.textContent = 'Failed to subscribe. Please ensure your email is correct or try again later.';
+  messageText.classList.add('failure');
+
+  notification.style.opacity = '1';
+  notification.style.maxWidth = '580px';
+  notification.classList.add('failure');
+  setTimeout(() => {
+    notification.remove();
+  }, 3000);
+};
+
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   const hintMsg1 = 'Please enter valid email address.';
@@ -22,7 +55,7 @@ submitButton.addEventListener('click', (e) => {
     hintText.textContent = '';
     hintText.style.opacity = '0';
     emailInput.value = '';
-    
+  }
 });
 
 emailInput.addEventListener('focus', () => {
