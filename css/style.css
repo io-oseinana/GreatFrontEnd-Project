@@ -211,6 +211,13 @@ body {
   width: 400px;
   max-width: 48rem;
 
+
+  .hint-text {
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
  
 }
 
