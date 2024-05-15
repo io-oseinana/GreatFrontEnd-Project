@@ -227,6 +227,7 @@ body {
     font-weight: 400;
     line-height: 20px;
     opacity: 0;
+    transition: all 0.3s ease;
   }
  
 }
@@ -442,7 +443,7 @@ body {
     }
 }
 
-.toast-notification {
+.toast-notification  {
   border-radius: 125rem;
   padding: 4px 10px 4px 4px;
   display: flex;
@@ -452,8 +453,10 @@ body {
   position: fixed;
   top: 2.5rem;
   right:  50%;
+  width: 88%;
+  max-width: 507px;
   transform: translateX(50%);
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 0.3s ease
 }
 
@@ -477,18 +480,18 @@ body {
   ;
 }
 
-.text {
+.badge-text {
   text-align: center;
   font-size: 14px;
   line-height:  20px;
   font-weight: 500;
 }
 
-.text.success {
+.badge-text.success {
   color: var(--green)
 }
 
-.text.failure {
+.badge-text.failure {
   color: var(--red-dark)
 }
 
