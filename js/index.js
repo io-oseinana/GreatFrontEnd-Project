@@ -55,6 +55,28 @@ submitButton.addEventListener('click', (e) => {
     hintText.textContent = '';
     hintText.style.opacity = '0';
     emailInput.value = '';
+
+    const sendEmail = async (email) => {
+      try {
+        const response = await fetch('https://mail.google.com/mail/oseinana ', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+          }),
+        });
+        if (response.status === 200) {
+          notifySuccess(badgeText, messageText);
+        } else {
+          notifyError(badgeText, messageText);
+        }
+      } catch (error) {
+        notifyError(badgeText, messageText);
+      }
+    };
+    sendEmail(emailInput.value);
   }
 });
 
