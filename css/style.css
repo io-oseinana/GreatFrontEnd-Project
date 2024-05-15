@@ -324,6 +324,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   transition: all 0.3s ease;
+  width: 352px;
 
   img {
     width: 6.5625rem;
@@ -565,6 +566,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 590px) {
+  .container {
+    height: 100%;
+  }
   .footer_container {
     padding: 48px 0 48px 0;
     margin: 0;
@@ -622,6 +626,10 @@ body {
 
     .footer_info_nav {
       gap: 2rem;
+
+      .info-nav-logo {
+        width: 100%;
+      }
     }
 
     .info-nav_links {
@@ -647,6 +655,17 @@ body {
     }
   }
 
+}
+
+@media (min-width: 591px) and (max-width: 768px) {
+  .form-group  {
+    width: 100%;
+    /* flex-direction: column; */
+    input {
+      width: 411px !important;
+    }
+   
+  }
 }
 
 .credits {
