@@ -245,13 +245,19 @@ body {
     padding: .625rem .875rem;
     color: var(--gray);
     font-size: .875rem;
+    outline: none;
 
-    &focus {
+    &:focus {
       box-shadow: 
     0px 0px 0px 4px rgba(68, 76, 231, 0.12),
     0px 1px 2px 0px rgba(16, 24, 40, 0.05),
     0px 0px 0px 1px rgba(68, 76, 231, 1)
     }
+
+   &:disabled {
+     background: #F0F0F0;
+     color: #a3a3a3;
+   }
   }
 
   button {
@@ -456,7 +462,7 @@ body {
   width: 88%;
   max-width: 507px;
   transform: translateX(50%);
-  /* opacity: 0; */
+  opacity: 0;
   transition: opacity 0.3s ease
 }
 
