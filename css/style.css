@@ -1,3 +1,19 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-dark-blue: #4338CA;
+  --color-blue: #4F46E5;
+  --color-light-blue: #6366F1;
+  --color-deep-blue: #3730A3;
+  --color-off-white: #EEF2FF;
+  --color-green: #15803D;
+  --color-light-green: #BBF7D0;
+  --color-pale-green: #F0FDF4;
+  --color-black: #171717;
+  --color-dark-gray: #525252;
+  --color-gray: #E6E6E6;
+  --color-light-gray: #F9FAFB;
+  --color-border-gray: #D2D6DB;
+}
 
 /* Box sizing rules */
 *,
@@ -111,5 +127,7 @@ body {
   color: #000;
   font-weight: bold;
 }
+
+
 
 
