@@ -1,27 +1,497 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
-body {
-  margin: 0;
-  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  min-height: 100vh;
+:root {
+  --color-white: #fff;
+  --color-dark-blue: #4338ca;
+  --color-blue: #4f46e5;
+  --color-light-blue: #6366f1;
+  --color-deep-blue: #3730a3;
+  --color-off-white: #eef2ff;
+  --color-green: #15803d;
+  --color-light-green: #bbf7d0;
+  --color-pale-green: #f0fdf4;
+  --color-black: #171717;
+  --color-dark-gray: #525252;
+  --color-gray: #e6e6e6;
+  --color-light-gray: #f9fafb;
+  --color-border-gray: #d2d6db;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Remove defauts styles on linkes */
+
+a {
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default button styles */
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      147.52deg,
+      var(--color-light-gray) 0%,
+      var(--color-border-gray)  100%
+    );
+}
+
+.pricing {
+  width: 100%;
+  height: 100vh;
+}
+
+.page-body {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background: var(--color-white);
+  border-radius: 0.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0.25rem 0.375rem -0.125rem rgba(0, 0, 0, 0.05),
+    0 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.section-pricing {
+  padding: 6rem;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  padding: 0 10rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+
+  & > p {
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+
+  .header-text-pair {
+    padding: 0 2.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: var(--color-dark-blue);
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.header-text-pair h2 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.heading-and-check-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.heading {
+  color: var(--color-black);
+  text-align: left;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.check-items {
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+
+  & svg {
+    border-radius: 624.9375rem;
+    background: #eef2ff;
+    color: #6366f1;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  & p {
+    color: var(--color-dark-gray);
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+.price {
+  background: var(--color-white);
+  border-radius: 0.5rem;
+  border: 1px solid #e5e5e5;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 30.4375rem;
+  box-shadow:
+    0 0.25rem 0.375rem -0.125rem rgba(0, 0, 0, 0.05),
+    0 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.1);
+}
+
+.price-text-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-text {
+  background: var(--color-pale-green);
+  border-radius: 624.9375rem;
+  border: 1px solid var(--color-light-green);
+  color: var(--color-green);
+  padding: 0.25rem  0.625rem 0.25rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+._699 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  font-weight: 700;
+}
+
+.usd {
+  color: var(--color-dark-gray);
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.text-pair4 {
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  & p {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+.button {
+  background: var(--color-dark-blue);
+  border-radius: 0.25rem;
+  color: var(--color-white);
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  width: 100%;
+  height: 3rem;
+  box-shadow:
+    0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.06),
+    0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+
+  &:hover {
+    background: var(--color-deep-blue);
+  }
+
+  &:focus {
+    box-shadow:
+      0 0 0 0.25rem rgba(68, 76, 231, 0.12),
+      0 0 0 0.0625rem rgba(68, 76, 231, 1);
+  }
+
+  &:disabled {
+    background: #f5f5f5;
+    color: #a3a3a3;
+  }
 }
 
 .credits {
   color: #777;
   position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+@media (max-width: 61.625rem) {
+  .section-pricing {
+    padding: 4rem 1rem 4rem 1rem;
+  }
+
+  .header {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .container2 {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 80rem;
+  }
+
+  .content3 {
+    width: 100%;
+  }
+
+  .check-items {
+    padding: 0;
+  }
+
+  .price {
+    width: 100%;
+  }
+}
+
+@media (min-width: 20rem) and (max-width: 36.6875rem) {
+  .pricing {
+    height: 100%;
+  }
+
+  .content {
+    border-radius: 0.25rem;
+  }
+
+  .section-pricing {
+    padding: 3rem 0.75rem 3rem 0.75rem;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header > p {
+    font-size: 1.125rem;
+  }
+
+  .header-text-pair {
+    padding: 0;
+  }
+
+  .header-text-pair h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .container2 {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contetn3 {
+    gap: 2rem;
+    width: 19.4375rem;
+  }
+
+  .heading-and-check-items {
+    gap: 2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-wrap: wrap;
+  }
+
+  ._699 {
+    font-size: 3rem;
+    line-height: 48px;
+    font-weight: 600;
+  }
+
+  br {
+    display: none;
+  }
+
+  .button {
+    padding: 0.625rem 1rem 0.625rem 1rem;
+  }
 }
