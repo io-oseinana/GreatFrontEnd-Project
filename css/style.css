@@ -138,28 +138,28 @@ body {
 }
 
 .page-body {
-  padding: 16px;
+  padding: 1rem;
   width: 100%;
   height: 100%;
 }
 
 .content {
   background: var(--color-white);
-  border-radius: 6px;
+  border-radius: .375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow:
-    0 4px 6px -2px rgba(0, 0, 0, 0.05),
-    0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    0 .25rem .375rem -0.125rem rgba(0, 0, 0, 0.05),
+    0 .625rem .9375rem -0.1875rem rgba(0, 0, 0, 0.1);
   height: 100%;
 }
 
 .section-pricing {
-  padding: 96px;
+  padding: 6rem;
   display: flex;
-  gap: 80px;
+  gap: 5rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -167,7 +167,7 @@ body {
 .pricing-container {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -175,39 +175,39 @@ body {
 .content-header {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   align-items: center;
   justify-content: flex-start;
 }
 
 .header {
-  padding: 0 160px 0 160px;
+  padding: 0 10rem 0 10rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
 
   & > p {
     color: var(--color-dark-gray);
     text-align: center;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
   }
 
   .header-text-pair {
-    padding: 0 40px 0 40px;
+    padding: 0 2.5rem 0 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: .75rem;
     align-items: center;
     justify-content: center;
 
     h1 {
       color: var(--color-dark-blue);
       text-align: center;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5rem;
       font-weight: 600;
     }
   }
@@ -216,15 +216,15 @@ body {
 .header-text-pair h2 {
   color: var(--color-black);
   text-align: center;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 600;
 }
 
 .container2 {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -233,7 +233,7 @@ body {
 .content3 {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3rem;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -241,7 +241,7 @@ body {
 .heading-and-check-items {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -249,16 +249,16 @@ body {
 .heading {
   color: var(--color-black);
   text-align: left;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 600;
 }
 
 .check-items {
-  padding: 0 16px 0 16px;
+  padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -266,85 +266,85 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: .75rem;
   align-items: center;
   justify-content: flex-start;
 
   & svg {
-    border-radius: 9999px;
+    border-radius: 624.9375rem;
     background: #eef2ff;
     color: #6366f1;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   & p {
     color: var(--color-dark-gray);
     text-align: left;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     font-weight: 400;
   }
 }
 
 .price {
   background: var(--color-white);
-  border-radius: 8px;
+  border-radius: .5rem;
   border: 1px solid #e5e5e5;
-  padding: 32px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  width: 487px;
+  width: 30.4375rem;
   box-shadow:
-    0 4px 6px -2px rgba(0, 0, 0, 0.05),
-    0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    0 .25rem .375rem -0.125rem rgba(0, 0, 0, 0.05),
+    0 .625rem .9375rem -0.1875rem rgba(0, 0, 0, 0.1);
 }
 
 .price-text-pair {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: .5rem;
   align-items: center;
   justify-content: center;
 }
 
 .badge-text {
   background: var(--color-pale-green);
-  border-radius: 9999px;
+  border-radius: 624.9375rem;
   border: 1px solid var(--color-light-green);
   color: var(--color-green);
-  padding: 4px  10px 4px 10px;
+  padding: .25rem  .625rem .25rem .625rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: .875rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
 
 ._699 {
   color: var(--color-black);
   text-align: center;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
   font-weight: 700;
 }
 
 .usd {
   color: var(--color-dark-gray);
   text-align: center;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: .875rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
 
 .text-pair4 {
-  padding: 0 32px 0 32px;
+  padding: 0 2rem 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -353,24 +353,24 @@ body {
   & p {
     color: var(--color-black);
     text-align: center;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
   }
 }
 
 .button {
   background: var(--color-dark-blue);
-  border-radius: 4px;
+  border-radius: .25rem;
   color: var(--color-white);
-  padding: 12px 20px 12px 20px;
+  padding: .75rem 1.25rem .75rem 1.25rem;
   width: 100%;
-  height: 48px;
+  height: 3rem;
   box-shadow:
-    0 1px 2px 0 rgba(0, 0, 0, 0.06),
-    0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  line-height: 24px;
+    0 .0625rem .125rem 0 rgba(0, 0, 0, 0.06),
+    0 .0625rem .1875rem 0 rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
 
   &:hover {
@@ -379,8 +379,8 @@ body {
 
   &:focus {
     box-shadow:
-      0 0 0 4px rgba(68, 76, 231, 0.12),
-      0 0 0 1px rgba(68, 76, 231, 1);
+      0 0 0 .25rem rgba(68, 76, 231, 0.12),
+      0 0 0 .0625rem rgba(68, 76, 231, 1);
   }
 
   &:disabled {
@@ -392,9 +392,9 @@ body {
 .credits {
   color: #777;
   position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: .6875rem;
   text-align: center;
 }
 
@@ -403,19 +403,19 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 986px) {
+@media (max-width: 61.625rem) {
   .section-pricing {
-    padding: 64px 16px 64px 16px;
+    padding: 4rem 1rem 4rem 1rem;
   }
 
   .header {
-    padding: 0 32px 0 32px;
+    padding: 0 2rem 0 2rem;
   }
 
   .container2 {
     flex-direction: column;
-    gap: 48px;
-    max-width: 1280px;
+    gap: 3rem;
+    max-width: 80rem;
   }
 
   .content3 {
@@ -431,17 +431,17 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 587px) {
+@media (min-width: 20rem) and (max-width: 36.6875rem) {
   .pricing {
     height: 100%;
   }
 
   .content {
-    border-radius: 4px;
+    border-radius: .25rem;
   }
 
   .section-pricing {
-    padding: 48px 12px 48px 12px;
+    padding: 3rem .75rem 3rem .75rem;
   }
 
   .header {
@@ -449,7 +449,7 @@ body {
   }
 
   .header > p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .header-text-pair {
@@ -457,32 +457,32 @@ body {
   }
 
   .header-text-pair h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.875rem ;
+    line-height: 2.25rem;
   }
 
   .container2 {
-    gap: 32px;
+    gap: 2rem;
     width: 100%;
   }
 
   .contetn3 {
-    gap: 32px;
-    width: 311px;
+    gap: 2rem;
+    width: 19.4375rem;
   }
 
   .heading-and-check-items {
-    gap: 32px;
+    gap: 2rem;
   }
 
   .heading {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-wrap: wrap;
   }
 
   ._699 {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 48px;
     font-weight: 600;
   }
@@ -492,6 +492,6 @@ body {
   }
 
   .button {
-    padding: 10px 16px 10px 16px;
+    padding: .625rem 1rem .625rem 1rem;
   }
 }
