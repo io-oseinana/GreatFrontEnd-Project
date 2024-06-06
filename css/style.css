@@ -72,7 +72,7 @@ picture {
 }
 
 button {
-	background: tranparent;
+	background: transparent;
 	border: none;
 	outline: none;
 }
@@ -131,7 +131,7 @@ main {
   display: flex;
 flex-direction: column;
 gap: 64px;
-align-self: stretch;
+/* align-self: stretch; */
 padding: 96px;
 }
 
@@ -141,7 +141,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 64px;
-align-self: stretch;
+/* align-self: stretch; */
 /* border-radius: 8px; */
 /* box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05); */
 }
@@ -151,7 +151,7 @@ align-self: stretch;
 flex-direction: column;
 align-items: center;
 gap: 20px;
-align-self: stretch;
+/* align-self: stretch; */
 padding: 0px 160px;
 }
 
@@ -160,7 +160,7 @@ padding: 0px 160px;
 flex-direction: column;
 justify-content: center;
 gap: 12px;
-align-self: stretch;
+/* align-self: stretch; */
 padding: 0px 40px;
 }
 
@@ -191,7 +191,7 @@ color: #525252;
 .container-sub {
   display: flex;
 gap: 32px;
-align-self: stretch;
+/* align-self: stretch; */
 }
 
 .feature-row {
@@ -205,7 +205,7 @@ width: 100%;
 .feature-row li {
   display: flex;
 gap: 20px;
-align-self: stretch;
+/* align-self: stretch; */
 }
 
 .feature-row .icon {
@@ -281,8 +281,23 @@ object-fit: cover;
   font-weight: bold;
 }
 
+@media (width >=  1200px){
+  .feature-row li:nth-of-type(1) .icon {
+    width: 55px;
+  }
+  
+  .feature-row li:nth-of-type(2) .icon {
+    width: 85px;
+  }
+  
+  .feature-row li:nth-of-type(3) .icon {
+    width: 85px;
+  }
+  
+}
 
-@media (max-width: 768px) {
+
+@media (max-width: 1220px) {
  .features-container {
     height: auto;
   }
@@ -304,13 +319,36 @@ object-fit: cover;
     flex-direction: column;
     gap: 48px;
   }
+
+  .feature-row li:nth-of-type(1) .icon {
+    width: 48px;
+  }
+  
+  .feature-row li:nth-of-type(2) .icon {
+    width: 70.5px;
+  }
+  
+  .feature-row li:nth-of-type(3) .icon {
+    width: 70.5px;
+  }
+  
   
   .hero-image {
     align-self: stretch;
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and  (max-width: 620px) {
+  .features-container {
+    height: auto;
+  }
+
+  .container-sub{
+    flex-direction: column;
+    /* gap: 48px; */
+  }
+
+
   .content {
     border-radius: 4px;
   }
@@ -323,6 +361,19 @@ padding: 48px 12px;
   .container-main {
 gap: 48px;
 }
+
+.feature-row li:nth-of-type(1) .icon {
+  width: 116.6px;
+}
+
+.feature-row li:nth-of-type(2) .icon {
+  width: 178.5px;
+}
+
+.feature-row li:nth-of-type(3) .icon {
+  width: 178.5px;
+}
+
 
 .text-pair h2 {
   font-size: 30px;
@@ -340,3 +391,4 @@ gap: 48px;
   height: 180px;
 }
 }
+
