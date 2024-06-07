@@ -1,11 +1,10 @@
-
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 
 /* Prevent font size inflation */
@@ -180,6 +179,11 @@ text-align: center;
 color: #171717;
 }
 
+.right-header .text-pair h2, .right-header  p{
+width: 816px;
+text-wrap: pretty;
+}
+
 .header p {
 font-weight: 400;
 font-size: 20px;
@@ -311,10 +315,15 @@ object-fit: cover;
     padding: 0;
   }
 
+  .right-header .text-pair h2{
+    width: 100%;
+    text-wrap: pretty;
+    }
+
   .header p {
     width: 500px;
   }
-
+  
   .container-sub{
     flex-direction: column;
     gap: 48px;
@@ -370,10 +379,21 @@ gap: 48px;
   width: 178.5px;
 }
 
-.feature-row li:nth-of-type(3) .icon {
-  width: 178.5px;
+/* .feature-row li:nth-of-type(3) .icon {
+  width: 162.2px;
 }
 
+.right-feature-row li:nth-child(1) .icon {
+  width: 171.5px;
+}
+
+.right-feature-row li:nth-child(2) .icon {
+  width: 201px;
+}
+
+.right-feature-row li:nth-child(3) .icon {
+  width: 178.5px;
+} */
 
 .text-pair h2 {
   font-size: 30px;
