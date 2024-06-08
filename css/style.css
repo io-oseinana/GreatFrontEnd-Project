@@ -141,7 +141,6 @@ display: flex;
   display: flex;
 flex-direction: column;
 gap: 64px;
-/* align-self: stretch; */
 padding: 96px;
 }
 
@@ -151,9 +150,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 64px;
-/* align-self: stretch; */
-/* border-radius: 8px; */
-/* box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05); */
 }
 
 .header {
@@ -161,7 +157,6 @@ gap: 64px;
 flex-direction: column;
 align-items: center;
 gap: 20px;
-/* align-self: stretch; */
 padding: 0px 160px;
 }
 
@@ -170,7 +165,6 @@ padding: 0px 160px;
 flex-direction: column;
 justify-content: center;
 gap: 12px;
-/* align-self: stretch; */
 padding: 0px 40px;
 }
 
@@ -206,7 +200,6 @@ color: #525252;
 .container-sub {
   display: flex;
 gap: 32px;
-/* align-self: stretch; */
 }
 
 .feature-row {
@@ -220,7 +213,6 @@ width: 100%;
 .feature-row li {
   display: flex;
 gap: 20px;
-/* align-self: stretch; */
 }
 
 .feature-row .icon {
@@ -387,7 +379,6 @@ footer button {
 
   .container-sub{
     flex-direction: column;
-    /* gap: 48px; */
   }
 
 
