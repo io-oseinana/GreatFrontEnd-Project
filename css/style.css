@@ -74,6 +74,7 @@ button {
 	background: transparent;
 	border: none;
 	outline: none;
+  cursor: pointer;
 }
 
 /* Anything that has been anchored to should have extra scroll margin */
@@ -106,6 +107,16 @@ main {
 .features-container {
   height: 100vh;
   width: 100%;
+}
+
+.right-feature-container {
+  opacity: 0;
+display: none;
+}
+
+.right-feature-container.active {
+  opacity: 1;
+display: flex;
 }
 
 .page-body {
@@ -271,11 +282,33 @@ box-shadow: 0px 4px 6px -2px rgb(0 0 0 / 0.05), 0px 10px 15px -3px rgb(0 0 0 / 0
 object-fit: cover;
 }
 
-.credits {
-  color: #777;
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
   bottom: 24px;
   left: 24px;
+  width: 100%;
+}
+
+footer button {
+  background: linear-gradient(255deg, rgba(105, 105, 246, 1), rgba(29, 28, 222, 1));
+  padding: 3px 10px;
+  width: 130px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 11px;
+
+  &:hover {
+    background: linear-gradient(255deg, rgba(105, 105, 246, 0.8), rgba(29, 28, 222, 0.8));
+  }
+}
+
+.credits {
+  color: #777;
   font-size: 11px;
   text-align: center;
 }
@@ -409,6 +442,14 @@ gap: 48px;
 
 .hero-image {
   height: 180px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  gap: 10px;
 }
 }
 
