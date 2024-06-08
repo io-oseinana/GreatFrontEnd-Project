@@ -109,9 +109,9 @@ main {
   width: 100%;
 }
 
-/* .right {
+.left-feature-container {
   height: 100%;
-} */
+}
 
 .right-feature-container {
   display: none;
