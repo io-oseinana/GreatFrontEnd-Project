@@ -109,9 +109,9 @@ main {
   width: 100%;
 }
 
-.right {
+/* .right {
   height: 100%;
-}
+} */
 
 .right-feature-container {
   display: none;
@@ -339,6 +339,19 @@ footer button {
   .feature-row li:nth-of-type(3) .icon {
     width: 85px;
   }
+
+  .left-feature-row li:nth-of-type(1) .icon {
+    width: 82.7px;
+  }
+  
+  .left-feature-row  li:nth-of-type(2) .icon {
+    width: 102.4px;
+  }
+  
+  .left-feature-row li:nth-of-type(3) .icon {
+    width: 114.3px;
+  }
+  
 }
 
 @media (width <= 1220px) {
@@ -385,6 +398,18 @@ footer button {
     width: 70.5px;
   }
 
+  .left-feature-row li:nth-of-type(1) .icon {
+    width: 68.1px;
+  }
+  
+  .left-feature-row  li:nth-of-type(2) .icon {
+    width: 84.3px;
+  }
+  
+  .left-feature-row li:nth-of-type(3) .icon {
+    width: 94.2px;
+  }
+
   .hero-image {
     align-self: stretch;
   }
@@ -420,21 +445,21 @@ footer button {
     width: 178.5px;
   }
 
-  /* .feature-row li:nth-of-type(3) .icon {
-  width: 162.2px;
-}
+  .feature-row li:nth-of-type(3) .icon {
+    width: 180px;
+  }
 
-.right-feature-row li:nth-child(1) .icon {
+.left-feature-container li:nth-of-type(1) .icon {
   width: 171.5px;
 }
 
-.right-feature-row li:nth-child(2) .icon {
+.left-feature-container li:nth-of-type(2) .icon {
   width: 201px;
 }
 
-.right-feature-row li:nth-child(3) .icon {
+.left-feature-container li:nth-of-type(3) .icon {
   width: 178.5px;
-} */
+}
 
   .text-pair h2 {
     font-size: 30px;
