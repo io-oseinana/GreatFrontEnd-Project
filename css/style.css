@@ -105,13 +105,13 @@ main {
 }
 
 .features-container {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
-.left-feature-container {
+/* .left-feature-container {
   height: 100%;
-}
+} */
 
 .right-feature-container {
   display: none;
