@@ -1,2 +1,6 @@
-// Write custom JavaScript here.
-// You may ignore this file and delete if if JavaScript is not required for your challenge.
+const sectionRigtht = document.querySelector('.right-feature-container');
+const btnShow = document.querySelector('#btn-show');
+
+btnShow.addEventListener('click', () => {
+    sectionRigtht.classList.toggle('active');
+    });
