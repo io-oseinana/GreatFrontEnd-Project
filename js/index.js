@@ -1,8 +1,14 @@
 const teamContent = document.querySelector('.team-content');
+const loading = document.querySelector('.loading');
+
+loading.style.display = 'block';
 
 fetch('/data/team.json')
 .then(response => response.json())
 .then(data => {
+
+    loading.style.display = 'none';
+
     data.forEach((member) => {
         const memberDiv = document.createElement('div');
         memberDiv.classList.add('team-member');
@@ -48,4 +54,5 @@ fetch('/data/team.json')
     errorDiv.classList.add('error');
     errorDiv.textContent = `Error: ${error.message} Error fetching data. Please try again later.`;
     teamContent.appendChild(errorDiv);
+    loading.style.display = 'none';
 });
