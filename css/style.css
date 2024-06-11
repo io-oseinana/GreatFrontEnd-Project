@@ -246,7 +246,7 @@ body {
   text-align: start;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 89.0625rem) {
   .team-section {
     padding: 4rem 1rem;
   }
@@ -264,12 +264,16 @@ body {
     padding: 0rem;
   }
 
+  .team-content {
+    justify-content: center;
+ }
+
   .team-member {
     width: 21rem;
   }
 }
 
-@media (max-width: 23.4375rem){
+@media (min-width: 15rem) and (max-width: 33.75rem){
   .content {
     border-radius: 4px;
   }
@@ -295,10 +299,19 @@ body {
   }
 
   .team-member {
-    width: 100%;
+    width: 19.4375rem;
   }
 
-  
+}
+
+@media (min-width: 13.75rem) and (max-width: 365px) {
+  .team-member {
+    width: 100%;
+  }    
+}
+
+.error {
+  color: #ff0033;
 }
 
 .credits {
