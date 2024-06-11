@@ -1,5 +1,92 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -8,8 +95,222 @@ body {
   min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+/* main section */
+
+.team-section-container {
+  background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+  height: 100%;
+  width: 100%;
+}
+
+.page-body {
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0rem 0.25rem 0.375rem -0.125rem rgb(0 0 0 / 0.05),
+    0rem 0.625rem 0.9375rem -0.1875rem rgb(0 0 0 / 0.1);
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem 3.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+
+.content-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+.heading_supporting_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.subheading {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #4338ca;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #171717;
+}
+
+.supporting-text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #525252;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 0rem 2rem;
+}
+
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+
+.team-member {
+  width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team-member img {
+  height: 18.5rem;
+  object-fit: cover;
+}
+
+.text-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.name-support-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name-role {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #171717;
+}
+
+.role {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #4338ca;
+}
+
+.name-support-text .supporting-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #525252;
+  text-align: start;
+}
+
+@media (max-width: 89.0625rem) {
+  .team-section {
+    padding: 4rem 1rem;
+  }
+
+  .container {
+    padding: 0rem;
+  }
+
+  .content-header {
+    justify-content: space-between;
+  }
+
+  .team-container {
+    gap: 2rem;
+    padding: 0rem;
+  }
+
+  .team-content {
+    justify-content: center;
+  }
+
+  .team-member {
+    width: 21rem;
+  }
+}
+
+@media (min-width: 15rem) and (max-width: 33.75rem) {
+  .content {
+    border-radius: 4px;
+  }
+
+  .team-section {
+    gap: 3rem;
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .team-container {
+    gap: 3rem;
+    padding: 0rem;
+  }
+
+  .team-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .team-member {
+    width: 19.4375rem;
+  }
+}
+
+@media (min-width: 13.75rem) and (max-width: 365px) {
+  .team-member {
+    width: 100%;
+  }
+}
+
+.error {
+  color: #ff0033;
 }
 
 .credits {
@@ -24,4 +325,103 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+/* screen Loading section */
+
+.loading {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: currentColor;
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
