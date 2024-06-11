@@ -3,7 +3,7 @@ const loading = document.querySelector('.loading');
 
 loading.style.display = 'block';
 
-fetch('/data/team.json')
+fetch('../data/team.json')
 .then(response => response.json())
 .then(data => {
 
