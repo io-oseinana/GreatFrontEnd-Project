@@ -3,6 +3,12 @@ const loading = document.querySelector('.loading');
 
 loading.style.display = 'block';
 
+// Fetch team data from JSON file
+/*
+  NB: When fetching the data from the json file, change the directory of images from '/team-section/data/img' to '../img'
+  and the directory of the json file from '/team-section/data/team.json' to '/data/team.json'
+  This is because, getting the images and json data from directory will not work on the local server. 
+*/
 fetch('/team-section/data/team.json')
 .then(response => response.json())
 .then(data => {
