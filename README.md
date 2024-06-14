@@ -8,6 +8,10 @@ Collection of my projects developed through the GreatFrontEnd platform. These pr
 2. **Project 2**: A dynamic web application built with JavaScript and React. [Screenshot]
 3. **Project 3**: A full-stack application using Node.js, Express, and MongoDB. [Screenshot]
 
+<div style="width: 100%;">
+  <img src="/cards/card.svg" style="width: 100%;" alt="Click to see the source">
+</div>
+
 ## Installation and Setup
 
 To clone the repository and run the projects locally, follow these steps:
