@@ -2,79 +2,35 @@
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @keyframes hi  {
-            0% { transform: rotate( 0.0deg) }
-           10% { transform: rotate(14.0deg) }
-           20% { transform: rotate(-8.0deg) }
-           30% { transform: rotate(14.0deg) }
-           40% { transform: rotate(-4.0deg) }
-           50% { transform: rotate(10.0deg) }
-           60% { transform: rotate( 0.0deg) }
-          100% { transform: rotate( 0.0deg) }
+          .card {
+        
+    border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 300px;
+    display: flex;
+    border: 1px solid #333;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    width: 550px;
+    background-color: rgba(39, 39, 42, .7);
         }
-
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-
-        .container {
-          --color-main: #5452ee;
-          --color-primary: #e73c7e;
-          --color-secondary: #23a6d5;
-          --color-tertiary: #ffff;
-
-          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-
-          width: 100%;
-          height: 300px;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
-
-        .hi {
-          animation: hi 1.5s linear -0.5s infinite;
-          display: inline-block;
-          transform-origin: 70% 70%;
-        }
-
-        @media (prefers-color-scheme: light) {
-          .container {
-            --color-main: #F15BB5;
-            --color-primary: #24b0ef;
-            --color-secondary: #4526f6;
-            --color-tertiary: #f6f645;
-          }
-        }
-
-        @media (prefers-reduced-motion) {
-          .container {
-            animation: none;
-          }
-
-          .hi {
-            animation: none;
-          }
-        }
+        
       </style>
 
-      <div class="container">
-        <h1>Hi there, my name is Nikola <div class="hi">👋</div></h1>
-      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; width: 50%;">
+  <div class="card">
+    <h3>Project 1</h3>
+<!--     <img src="https://github.com/io-oseinana/GreatFrontEnd-Project/assets/105572944/80cb4036-ccf2-4319-be36-2961eb64d3f3" alt="Project 1" style="width: 50%; border-radius: 10px;"> -->
+    <p>Description of Project 1.</p>
+     <div>
+       <h4> Built with </h4>
+<!--     <img src="https://img.shields.io/badge/HTML-red"> -->
+<!--     <img src="https://img.shields.io/badge/JavaScript-yellow"> -->
+     </div>
+    <a href="https://github.com/username/project1">View Project</a>
+  </div>
+</div>
+
     </div>
   </foreignObject>
 </svg>
