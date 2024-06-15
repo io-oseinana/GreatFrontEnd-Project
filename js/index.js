@@ -60,6 +60,7 @@ fetch("../data/pricingData.json")
 
         const featureList = document.createElement("ul");
         featureList.className = "row-one";
+        featureList.role = "list";
 
         plan.features.forEach((feature) => {
           const listItem = document.createElement("li");
