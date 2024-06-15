@@ -3,7 +3,7 @@
         "plan": "Basic Plan",
         "description": "Access to a curated selection of abstract images",
         "monthlyPrice": "$9.99",
-        "annualPrice": "6.99",
+        "annualPrice": "$6.99",
         "features": [
             "Standard quality images",
             "Limited to personal use",
@@ -13,9 +13,9 @@
     },
     {
         "plan": "Standard Plan",
-        "description": "Next-level Instegrations, priced economically",
+        "description": "Next-level Integrations, priced economically",
         "monthlyPrice": "$19.99",
-        "annualPrice": "15.99",
+        "annualPrice": "$15.99",
         "features": [
             "Expand library with more diverse abstract images",
             "High-resolution images available",
@@ -29,7 +29,7 @@
         "plan": "Premium Plan",
         "description": "Experience limitless living for power users",
         "monthlyPrice": "$29.99",
-        "annualPrice": "25.99",
+        "annualPrice": "$25.99",
         "features": [
             "Full access to the entire images library, including exclusive content",
             "Highest quality images, including premium collections",
