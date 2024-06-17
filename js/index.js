@@ -11,7 +11,11 @@ fetch("../data/pricingData.json")
 
         const highlight = document.createElement("div");
         highlight.className = "highlight";
-        highlight.textContent = plan.popular ? "Most Popular" : "";
+
+        const highlightText = document.createElement("p");
+        highlightText.textContent = plan.popular ? "Most Popular" : "";
+        
+        highlight.appendChild(highlightText);
 
         // text pair container one
 
@@ -41,10 +45,11 @@ fetch("../data/pricingData.json")
         monthlyPrice.textContent =
           currentPricing === "monthly" ? plan.monthlyPrice : plan.annualPrice;
 
-        const month = document.createElement("span");
+        const month = document.createElement("small");
         month.textContent = " / month";
 
         const bill = document.createElement("p");
+        bill.className = "bill";
         bill.textContent =
           currentPricing === "monthly" ? "Billed Monthly" : "Billed Annually";
 
