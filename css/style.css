@@ -218,8 +218,250 @@ gap: .375rem; */
   justify-content: center;
   align-items: center;
   gap: 32px;
-  align-self: stretch;
 }
+
+.pricing-card {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 32px;
+flex-grow: 1;
+background-color: #ffffff;
+padding: 32px;
+border-radius: 8px;
+border-width: 1px;
+border-style: solid;
+border-color: #e5e5e5;
+box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05);
+width: 384px;
+height: 676px;
+
+}
+
+.pricing-card .text-pair {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 8px;
+}
+
+.pricing-card .text-pair h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #171717;
+}
+
+.pricing-card .text-pair p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525252;
+}
+
+.pricing-card .text-pair .price {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.pricing-card .text-pair .price p {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  color: #171717;
+}
+
+.pricing-card .text-pair .price small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171717;
+}
+
+.pricing-card .bill {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #525252;
+}
+
+.row-one {
+  display: flex;
+flex-direction: column;
+gap: 20px;
+flex-grow: 1;
+height: 300px;
+}
+
+.row-one li {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.row-one li svg {
+background-color: #eef2ff;
+border-radius: 9999px;
+color: #6366f1;
+}
+
+.text-body {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 12px;
+flex-grow: 1;
+width: 100%;
+}
+
+.text-body p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #525252;
+}
+
+.btn-buy-now {
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+background-color: #ffffff;
+padding: 12px 20px;
+border-radius: 4px;
+border-width: 0.5px;
+border-style: solid;
+border-color: #e5e5e5;
+box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+}
+
+.btn-buy-now span {
+  padding: 0px 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171717;
+}
+
+.popular {
+  display: flex;
+flex-direction: column;
+gap: 32px;
+flex-grow: 1;
+background-color: #ffffff;
+border-radius: 8px;
+border-width: 1px;
+border-style: solid;
+border-color: #4f46e5;
+box-shadow: 0px 25px 50px -12px rgb(0 0 0 / 0.25);
+padding: 0;
+}
+
+.popular .highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef2ff;
+  padding: 16px 0px;
+  border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+}
+
+.popular .highlight p {
+font-weight: 700;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #4338ca;
+
+}
+
+.popular .text-pair {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 8px;
+padding-left: 32px;
+
+ .price p {
+  color: #4338ca;
+ }
+ .price small {
+  color: #4338ca;
+ }
+}
+
+.popular .row-one {
+  display: flex;
+flex-direction: column;
+gap: 20px;
+height: 264px;
+padding-left: 32px;
+padding-right: 24px;
+}
+
+.popular .row-one li {
+  width: 336px;
+display: flex;
+align-items: center;
+gap: 12px;
+
+  .text-pair {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 12px;
+align-self: stretch;
+padding: 0;
+  }
+}
+
+.popular .footer {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 8px;
+padding: 0px 32px 32px;
+}
+
+.popular .btn-buy-now {
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+background-color: #4338ca;
+padding: 12px 20px;
+border-radius: 4px;
+box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+
+ span {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 2px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #ffffff;
+ }
+}
+
+/* .premium-plan .pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05);
+color: #ffffff;
+} */
 
 .credits {
   color: #777;
