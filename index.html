@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,24 +11,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- Attribute this challenge to yourself! -->
+    <main>
+      <section class="pricing">
+        <article class="page-body">
+          <div class="main-content">
+            <div class="pricing-section">
+              <div class="pricing-container">
+                <section class="pricing-header_content">
+                  <header class="pricing-header">
+                    <div class="pricing-header_text-pair">
+                      <h2 class="subheading">Pricing Tier</h2>
+                      <h1 class="heading">Fit for all your needs</h1>
+                    </div>
+                    <p class="supporting-text">
+                      Pick the plan that suits you today and step up as your
+                      demands grow - our flexible options have your journey
+                      mapped out.
+                    </p>
+                  </header>
+                  <div class="pricing-header_toggle">
+                    <button class="toggle active" id="toggle-monthly">
+                      <span>Monthly</span>
+                    </button>
+                    <button class="toggle" id="toggle-annually">
+                      <span>Annually</span>
+                    </button>
+                  </div>
+                </section>
+                <section class="subscription-tier"></section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
     <div class="credits">
       A challenge by
       <a
@@ -38,7 +56,7 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
+        >Osei-Bonsu Isaac</a
       >.
     </div>
     <script src="js/index.js"></script>
