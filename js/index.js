@@ -14,11 +14,10 @@ fetch("../data/pricingData.json")
 
         const highlightText = document.createElement("p");
         highlightText.textContent = plan.popular ? "Most Popular" : "";
-        
+
         highlight.appendChild(highlightText);
 
         // text pair container one
-
         const textPairOne = document.createElement("div");
         textPairOne.className = "text-pair";
 
@@ -29,12 +28,10 @@ fetch("../data/pricingData.json")
         planDescription.textContent = plan.description;
 
         // append children
-
         textPairOne.appendChild(planTitle);
         textPairOne.appendChild(planDescription);
 
         // text pair container two
-
         const textPairTwo = document.createElement("div");
         textPairTwo.className = "text-pair";
 
@@ -48,20 +45,25 @@ fetch("../data/pricingData.json")
         const month = document.createElement("small");
         month.textContent = " / month";
 
+
+        const extractNumber = (price) => {
+          return parseFloat(price.replace(/[^0-9.-]+/g, ""));
+                };
+        
+        const annuallyBill = extractNumber(plan.annualPrice) * 12;
+        const annuallyBills = Math.round(annuallyBill);
         const bill = document.createElement("p");
-        bill.className = "bill";
+        bill.className = `bill ${plan.popular ? "popular-bill" : ""}`;
         bill.textContent =
-          currentPricing === "monthly" ? "Billed Monthly" : "Billed Annually";
-
+          currentPricing === "monthly" ? "Billed Monthly" : "Billed Annually " + "($" + annuallyBills + ")";
+        
         // append children
-
         price.appendChild(monthlyPrice);
         price.appendChild(month);
 
-        //  append children
-
+        // append children
         textPairTwo.appendChild(price);
-        textPairTwo.appendChild(bill);
+        textPairTwo.appendChild(bill);  
 
         const featureList = document.createElement("ul");
         featureList.className = "row-one";
@@ -116,7 +118,6 @@ fetch("../data/pricingData.json")
 
         button.appendChild(buttonText);
 
-        
         pricingCard.appendChild(highlight);
         pricingCard.appendChild(textPairOne);
         pricingCard.appendChild(textPairTwo);
@@ -130,6 +131,7 @@ fetch("../data/pricingData.json")
         } else {
           pricingCard.appendChild(button);
         }
+
         return pricingCard;
       };
 
@@ -141,12 +143,50 @@ fetch("../data/pricingData.json")
         return planContainer;
       };
 
-      pricingData.forEach((plan) => {
-        const planContainer = createPlanContainer(plan.plan);
-        const pricingCard = createCards(plan);
-        planContainer.appendChild(pricingCard);
-        subscriptionContainer.appendChild(planContainer);
-      });
-    })
+      const renderPlans = () => {
+        subscriptionContainer.innerHTML = ""; 
+
+        pricingData.forEach((plan) => {
+          const planContainer = createPlanContainer(plan.plan);
+          const pricingCard = createCards(plan);
+          planContainer.appendChild(pricingCard);
+          subscriptionContainer.appendChild(planContainer);
+        });
+      };
+
+     const monthlyBtn =  document
+        .getElementById("toggle-monthly");
+        monthlyBtn.addEventListener("click", () => {
+          currentPricing = "monthly";
+          renderPlans();
+          annuallyBtn.classList.remove("active");
+          monthlyBtn.classList.add("active");
+        });
+
+ const annuallyBtn =     document
+        .getElementById("toggle-annually");
+        annuallyBtn.addEventListener("click", () => {
+          currentPricing = "annually";
+          renderPlans();
+          annuallyBtn.classList.add("active");
+          monthlyBtn.classList.remove("active");
+        });
+
+      renderPlans();
+
+        const updateBillText = () => {
+          const windowWidth = window.innerWidth;
+          const billElement = document.querySelector('.popular-bill');
+          if (windowWidth <= 500) {
+              billElement.textContent = "Price in USD";
+            } else {
+              billElement.textContent = currentPricing === 'monthly' ? 'Billed Monthly' : 'Billed Annually';
+            }
+        };
+      
+        updateBillText();
+      
+        window.addEventListener('resize', updateBillText);    
+      })
   )
   .catch((error) => console.error("Error fetching the pricing data:", error));
