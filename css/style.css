@@ -200,7 +200,8 @@ body {
 }
 
 .toggle.active span {
-  font-weight: 600;
+  font-weight: 500;
+  color: #171717;
 }
 
 .toggle span {
@@ -208,14 +209,14 @@ body {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #171717;
+  color: #525252;
 }
 
 .subscription-tier {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -223,87 +224,88 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
   flex-grow: 1;
   background-color: #ffffff;
-  border-radius: 8px;
-  border-width: 1px;
+  border-radius: .5rem;
+  border-width: .0625rem;
   border-style: solid;
   border-color: #e5e5e5;
-  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05);
-  width: 384px;
-  height: 676px;
-  padding: 32px;
+  box-shadow: 0rem .0625rem .125rem 0 rgb(0 0 0 / 0.05);
+  width: 24rem;
+  height: 42.25rem;
+  padding: 2rem;
 }
 
-.basic-plan .highlight, .premium-plan .highlight {
+.basic-plan .highlight,
+.premium-plan .highlight {
   display: none;
-} 
+}
 
 .pricing-card .text-pair {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .pricing-card .text-pair h2 {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #171717;
 }
 
 .pricing-card .text-pair p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #525252;
 }
 
 .pricing-card .text-pair .price {
   display: flex;
   align-items: flex-end;
-  gap: 2px;
+  gap: .125rem;
 }
 
 .pricing-card .text-pair .price p {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3rem;
+  line-height: 3rem;
   color: #171717;
 }
 
 .pricing-card .text-pair .price small {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #171717;
 }
 
 .pricing-card .bill {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #525252;
 }
 
 .row-one {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   flex-grow: 1;
 }
 
 .row-one li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: .75rem;
 }
 
 .row-one li svg {
   background-color: #eef2ff;
-  border-radius: 9999px;
+  border-radius: 624.9375rem;
   color: #6366f1;
 }
 
@@ -311,33 +313,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  gap: .75rem;
   flex-grow: 1;
   width: 100%;
 }
 
 .text-body p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #525252;
 }
 
 .btn-buy-now {
   background-color: #ffffff;
-  padding: 12px 20px;
-  border-radius: 4px;
-  border-width: 0.5px;
+  padding: .75rem 1.25rem;
+  border-radius: .25rem;
+  border-width: .0313rem;
   border-style: solid;
   border-color: #e5e5e5;
-  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.1);
+  box-shadow: 0rem .0625rem .125rem 0 rgb(0 0 0 / 0.06), 0rem .0625rem .1875rem 0 rgb(0 0 0 / 0.1);
 
   &:hover {
     background-color: #fafafa;
   }
 
   &:focus {
-    box-shadow: 0px 0px 0px 4px
+    box-shadow: 0rem 0rem 0rem .25rem
       rgb(0.2666666805744171 0.2980392277240753 0.9058823585510254 / 0.12);
   }
 
@@ -348,10 +350,10 @@ body {
 }
 
 .btn-buy-now span {
-  padding: 0px 2px;
+  padding: 0rem .125rem;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #171717;
 }
 
@@ -359,7 +361,7 @@ body {
   display: flex;
   flex-direction: column;
   border-color: #4f46e5;
-  box-shadow: 0px 25px 50px -12px rgb(0 0 0 / 0.25);
+  box-shadow: 0rem 1.5625rem 3.125rem -0.75rem rgb(0 0 0 / 0.25);
   padding: 0;
 }
 
@@ -368,21 +370,21 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #eef2ff;
-  padding: 16px 0px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  padding: 1rem 0rem;
+  border-top-left-radius: .4375rem;
+  border-top-right-radius: .4375rem;
 }
 
 .popular .highlight p {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-align: center;
   color: #4338ca;
 }
 
 .popular .text-pair {
-  padding-left: 32px;
+  padding-left: 2rem;
 
   .price p {
     color: #4338ca;
@@ -393,18 +395,18 @@ body {
 }
 
 .popular .row-one {
-  padding-left: 32px;
-  padding-right: 24px;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
 }
 
 .popular .row-one li {
-  width: 336px;
+  width: 21rem;
 
   .text-pair {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: .75rem;
     padding: 0;
   }
 }
@@ -413,8 +415,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
-  padding: 0px 32px 32px;
+  gap: .5rem;
+  padding: 0rem 2rem 2rem;
 }
 
 .popular .btn-buy-now {
@@ -426,7 +428,7 @@ body {
 
   &:focus {
     background-color: #3730a3;
-    box-shadow: 0px 0px 0px 4px
+    box-shadow: 0rem 0rem 0rem .25rem
       rgb(0.2666666805744171 0.2980392277240753 0.9058823585510254 / 0.12);
   }
 
@@ -435,7 +437,7 @@ body {
   }
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 79.0625rem) {
   .pricing-section {
     padding: 4rem 1rem;
   }
@@ -453,21 +455,30 @@ body {
   .premium-plan {
     width: 100%;
   }
+
+  .basic-plan .row-one {
+    height: 11.25rem;
+  }
+
   .pricing-card {
     width: 100%;
     height: auto;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
   .pricing-section {
-    padding: 48px 12px;
+    padding: 3rem .75rem;
+  }
+
+  .pricing-container {
+    gap: 3rem;
   }
 
   .pricing-header {
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0rem;
   }
 
   .pricing-header_text-pair {
@@ -475,32 +486,36 @@ body {
   }
 
   .heading {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .supporting-text {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .pricing-header_toggle {
-    gap: 16px;
+    gap: 1rem;
+  }
+
+  .basic-plan .row-one {
+    height: auto;
   }
 
   .pricing-card {
-    padding: 16px;
+    padding: 1rem;
   }
 
   .popular {
-    padding: 0px;
+    padding: 0rem;
   }
 
   .popular .text-pair {
-    padding: 0px 16px;
+    padding: 0rem 1rem;
   }
 
   .popular .row-one {
-    padding: 0px 16px;
+    padding: 0rem 1rem;
 
     li {
       width: 100%;
@@ -512,16 +527,16 @@ body {
   }
 
   .popular .footer {
-    padding: 0px 16px 16px;
+    padding: 0rem 1rem 1rem;
   }
 }
 
 .credits {
   color: #777;
   position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: .6875rem;
   text-align: center;
 }
 
