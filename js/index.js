@@ -185,7 +185,7 @@ fetch("/pricing-section-tiers/data/pricingData.json")
           if (windowWidth <= 500) {
               billElement.textContent = "Price in USD";
             } else {
-              billElement.textContent = currentPricing === 'monthly' ? 'Billed Monthly' : 'Billed Annually';
+              billElement.textContent = currentPricing === 'monthly' ? 'Billed monthly' : 'Billed annually';
             }
         };
       
