@@ -199,10 +199,11 @@ body {
     0rem 0.0625rem 0.1875rem 0 rgb(0 0 0 / 0.1);
 }
 
+.toggle.active span {
+  font-weight: 600;
+}
+
 .toggle span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0rem 0.125rem;
   font-weight: 500;
   font-size: 1rem;
@@ -234,6 +235,10 @@ body {
   height: 676px;
   padding: 32px;
 }
+
+.basic-plan .highlight, .premium-plan .highlight {
+  display: none;
+} 
 
 .pricing-card .text-pair {
   display: flex;

@@ -119,7 +119,7 @@ fetch("/pricing-section-tiers/data/pricingData.json")
         button.className = "btn-buy-now";
 
         const buttonText = document.createElement("span");
-        buttonText.textContent = "Buy Now";
+        buttonText.textContent = "Buy now";
 
         button.appendChild(buttonText);
 
