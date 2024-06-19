@@ -128,6 +128,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  width: 100%;
 }
 
 .pricing-header_content {
@@ -185,10 +186,6 @@ body {
 
 .toggle {
   width: 8.75rem;
-  /* display: flex;
-justify-content: center;
-align-items: center;
-gap: .375rem; */
   background-color: #ffffff;
   padding: 0.625rem 1rem;
 }
@@ -218,6 +215,7 @@ gap: .375rem; */
   justify-content: center;
   align-items: center;
   gap: 32px;
+  width: 100%;
 }
 
 .pricing-card {
@@ -291,7 +289,6 @@ color: #525252;
 flex-direction: column;
 gap: 20px;
 flex-grow: 1;
-height: 300px;
 }
 
 .row-one li {
@@ -396,7 +393,7 @@ padding-left: 32px;
   display: flex;
 flex-direction: column;
 gap: 20px;
-height: 264px;
+/* height: 264px; */
 padding-left: 32px;
 padding-right: 24px;
 }
@@ -447,21 +444,94 @@ color: #ffffff;
  }
 }
 
-/* .premium-plan .pricing-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  flex-grow: 1;
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e5e5e5;
-  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.05);
-color: #ffffff;
-} */
+@media (max-width: 1265px) {
+  .pricing-section {
+    padding: 4rem 1rem;
+  }
+
+  .pricing-header {
+    padding: 0rem 2rem;
+  }
+
+  .subscription-tier {
+    flex-direction: column;
+  }
+
+  .basic-plan,
+  .standard-plan,
+  .premium-plan {
+    width: 100%;
+  }
+  .pricing-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px){
+
+  .pricing-section {
+    padding: 48px 12px;
+  }
+
+  .pricing-header {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .pricing-header_text-pair {
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .supporting-text {
+    font-size: 18px;
+    }
+
+    .pricing-header_toggle {
+      gap:  16px;
+    }
+
+    .pricing-card {
+      padding: 16px;
+    }
+
+    .popular {
+      padding: 0px;
+    }
+
+    .popular .text-pair {
+      padding: 0px 16px;
+    }
+
+    .popular .price .bill {
+        content: "";
+
+    }
+
+    
+
+    .popular .row-one {
+      padding: 0px 16px;
+
+      li {
+        width: 100%;
+      }
+
+      .text-body p {
+        text-wrap: balance;
+      }
+    }
+
+    .popular .footer {
+      padding: 0px 16px 16px;
+  }
+}
 
 .credits {
   color: #777;
