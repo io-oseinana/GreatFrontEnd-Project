@@ -60,7 +60,7 @@ fetch("/pricing-section-tiers/data/pricingData.json")
         const bill = document.createElement("p");
         bill.className = `bill ${plan.popular ? "popular-bill" : ""}`;
         bill.textContent =
-          currentPricing === "monthly" ? "Billed Monthly" : "Billed Annually " + "($" + annuallyBills + ")";
+          currentPricing === "monthly" ? "Billed monthly" : "Billed annually " + "($" + annuallyBills + ")";
         
         // append children
         price.appendChild(monthlyPrice);
