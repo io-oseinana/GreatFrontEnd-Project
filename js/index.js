@@ -1,4 +1,9 @@
-fetch("../data/pricingData.json")
+/*
+  NB: When fetching the data from the json file, change the directory of the directory of the json file from '/pricing-section-tiers/data/pricingData.json' to '/data/pricingData.json'
+  This is because, getting the  json data from directory will not work on the local server. 
+*/
+
+fetch("/pricing-section-tiers/data/pricingData.json")
   .then((response) =>
     response.json().then((pricingData) => {
       const subscriptionContainer =
@@ -189,4 +194,10 @@ fetch("../data/pricingData.json")
         window.addEventListener('resize', updateBillText);    
       })
   )
-  .catch((error) => console.error("Error fetching the pricing data:", error));
+  .catch(error => {
+    console.error('Error:', error);
+    const errorDiv = document.createElement('div');
+    errorDiv.classList.add('error');
+    errorDiv.textContent = `Error: ${error.message} Error fetching data. Please try again later.`;
+    teamContent.appendChild(errorDiv);
+});
