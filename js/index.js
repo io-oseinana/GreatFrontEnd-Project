@@ -1,2 +1,49 @@
-// Write custom JavaScript here.
-// You may ignore this file and delete if if JavaScript is not required for your challenge.
+fetch('/data/featuresData.json')
+.then(response => response.json())
+.then(data => {
+    
+    data.forEach(feature => {
+        const container = document.querySelector('.features-container');
+
+
+        const featureDiv = document.createElement('div');
+        featureDiv.classList.add('features');
+
+        const rowDiv = document.createElement('div');
+        rowDiv.classList.add('row');
+
+        const thumbnailIcons = document.createElement('div');
+        thumbnailIcons.classList.add('thumbnail-icons');
+        thumbnailIcons.innerHTML = feature.icons
+
+        const textPair = document.createElement('div');
+        textPair.classList.add('text-pair');
+
+        const title = document.createElement('h3');
+        title.classList.add('feature-title');
+        title.textContent = feature.title;
+
+        const description = document.createElement('p');
+        description.classList.add('feature-description');
+        description.textContent = feature.description;
+
+        textPair.appendChild(title);
+        textPair.appendChild(description);
+
+        rowDiv.appendChild(thumbnailIcons);
+        rowDiv.appendChild(textPair);
+
+        featureDiv.appendChild(rowDiv);
+
+        container.appendChild(featureDiv);
+})
+})
+
+.catch(error => {
+    const errorDiv = document.createElement('div');
+    errorDiv.classList.add('error');
+    errorDiv.textContent = `Error: ${error.message} An error occurred while fetching data`;
+
+    const container = document.querySelector('.features-container');
+    container.appendChild(errorDiv);
+});
