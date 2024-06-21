@@ -1,6 +1,6 @@
 const featuresContainer = document.querySelector(".features");
 
-fetch("/data/featuresData.json")
+fetch("/features-section-grid/data/featuresData.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((feature) => {
