@@ -284,6 +284,14 @@ body {
   }
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d30808;
+  grid-column: span 8;
+}
+
 .credits {
   color: #777;
   position: fixed;
