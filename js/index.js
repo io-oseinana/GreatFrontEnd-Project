@@ -1,13 +1,10 @@
+const featuresContainer = document.querySelector('.features');
+
 fetch('/data/featuresData.json')
 .then(response => response.json())
 .then(data => {
     
     data.forEach(feature => {
-        const container = document.querySelector('.features-container');
-
-
-        const featureDiv = document.createElement('div');
-        featureDiv.classList.add('features');
 
         const rowDiv = document.createElement('div');
         rowDiv.classList.add('row');
@@ -33,9 +30,7 @@ fetch('/data/featuresData.json')
         rowDiv.appendChild(thumbnailIcons);
         rowDiv.appendChild(textPair);
 
-        featureDiv.appendChild(rowDiv);
-
-        container.appendChild(featureDiv);
+        featuresContainer.appendChild(rowDiv);
 })
 })
 
@@ -43,7 +38,5 @@ fetch('/data/featuresData.json')
     const errorDiv = document.createElement('div');
     errorDiv.classList.add('error');
     errorDiv.textContent = `Error: ${error.message} An error occurred while fetching data`;
-
-    const container = document.querySelector('.features-container');
-    container.appendChild(errorDiv);
+    featuresContainer.appendChild(errorDiv);
 });
