@@ -2,12 +2,15 @@ const statsContainer = document.querySelector('.stats-content');
 const loading = document.querySelector('.loading-container');
 
 loading.style.display = 'block';
-fetch(
-  "https://www.greatfrontend.com/api/projects/challenges/statistics-metrics"
-) 
-.then((response) => response.json())
-.then(data => {
-  loading.style.display = 'none';
+
+async function fetchData() {
+  try {
+    const response = await fetch(
+      "https://www.greatfrontend.com/api/projects/challenges/statistics-metrics"
+    );
+    const data = await response.json();
+
+    loading.style.display = 'none';
 
     data.data.forEach(item => {
 
@@ -32,25 +35,31 @@ fetch(
 
         statsContainer.appendChild(metricsDiv)
     })
-        
-})
-.catch(error => {
-  console.error('Error fetching data:', error);
-  loading.style.display = 'none';
-});
 
+    function formatMetricName(metric) {
+      let formattedMetric = metric
+        .toLowerCase()
+        .replace(/_/g, ' ')
+        .replace(/downloads/, 'Downloads')
+        .replace(/paid users/, 'Paid users')
+        .replace(/library images/, 'Images in library');
+    
+      formattedMetric = formattedMetric.charAt(0).toUpperCase() + formattedMetric.slice(1);
+    
+      return formattedMetric;
+    }
+    
+  
+  } catch (error) {
+    const errorDiv = document.createElement('div');
+    errorDiv.classList.add('error-message');
+    errorDiv.textContent = `Error: Error while fetching for data,  ${error.message}`
+    loading.style.display = 'none';
 
-function formatMetricName(metric) {
-  let formattedMetric = metric
-    .toLowerCase()
-    .replace(/_/g, ' ')
-    .replace(/downloads/, 'Downloads')
-    .replace(/paid users/, 'Paid users')
-    .replace(/library images/, 'Images in library');
+    statsContainer.appendChild(errorDiv);
 
-  // Capitalize only the first letter of the first word
-  formattedMetric = formattedMetric.charAt(0).toUpperCase() + formattedMetric.slice(1);
+  }
 
-  return formattedMetric;
 }
 
+fetchData();
