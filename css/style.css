@@ -252,7 +252,7 @@ body {
 }
 
 .error-message {
-  color: #ff0d0d
+  color: #ff0d0d;
 }
 
 .loading-container {
@@ -288,7 +288,7 @@ body {
 }
 
 .dot::before {
-  content: '';
+  content: "";
   height: var(--dot-size);
   width: var(--dot-size);
   border-radius: 50%;
@@ -402,7 +402,7 @@ body {
       gap: 48px;
 
       img {
-      height: 311px;
+        height: 311px;
       }
 
       .stats-content {
@@ -419,8 +419,6 @@ body {
       }
     }
   }
-
-
 }
 
 .credits {
