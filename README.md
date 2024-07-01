@@ -8,10 +8,6 @@ Collection of my projects developed through the GreatFrontEnd platform. These pr
 2. **Project 2**: A dynamic web application built with JavaScript and React. [Screenshot]
 3. **Project 3**: A full-stack application using Node.js, Express, and MongoDB. [Screenshot]
 
-<div style="width: 100%;">
-  <img src="/cards/card.svg" style="width: 100%;" alt="Click to see the source">
-</div>
-
 ## Installation and Setup
 
 To clone the repository and run the projects locally, follow these steps:
@@ -45,3 +41,51 @@ For any questions or discussions related to these projects, feel free to reach o
 
 - Email: your-email@example.com
 - LinkedIn: [Your Name](https://www.linkedin.com/in/yourusername/)
+
+
+# GreatFrontEnd
+
+## Portfolio Projects
+
+<div>
+
+<table style="background: rgb(83 83 83 / 10%);">
+  <tr>
+    <td>
+      <h3>Testimonial Card</h3>
+      <img src="/cards/img/projects/404-section.png" width="100%" height="100%" alt="Testimonial Card" style="border-radius:10px;">
+      <p>Build a simple user testimonial card with key testimonial elements.</p>
+      <p><strong>Built with:</strong></p>
+      <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge">
+      <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <h3>Testimonial Card</h3>
+      <img src="/cards/img/projects/features-section(side image)1.png" width="100%" height="100%" alt="Testimonial Card" style="border-radius:10px;">
+      <p>Build a simple user testimonial card with key testimonial elements.</p>
+      <p><strong>Built with:</strong></p>
+      <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge">
+      <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <h3>Testimonial Card</h3>
+      <img src="/cards/img/projects/team-section.png" width="100%" height="100%" alt="Testimonial Card" style="border-radius:10px;">
+      <p>Build a simple user testimonial card with key testimonial elements.</p>
+      <p><strong>Built with:</strong></p>
+      <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge">
+      <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge">
+    </td>
+  </tr>
+</table>
+
+</div>
