@@ -1,0 +1,327 @@
+:root {
+  --white-color: #fff;
+  --hover-white-color: #e6e6e6;
+  --blue-color: #4338ca;
+  --hover-blue-color: #3730a3;
+  --black-color: #171717;
+  --gray-color: #525252;
+  --linear-page-gradient:
+    linear-gradient(
+      147.52deg,
+      rgba(249, 250, 251, 1) 0%,
+      rgba(210, 214, 219, 1) 100%
+    );
+  --font-size-normal: 1rem;
+  --font-weight-medium: 500;
+  --line-height-normal: 1.5rem;
+  --border-radius-normal: 0.25rem;
+  --shadow-box:
+    0 1px 2px 0 rgba(0, 0, 0, 0.06),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:has(li),
+ol:has(li) {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background-image: var(--linear-page-gradient);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 7rem;
+  position: relative;
+}
+
+.nav {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 76rem;
+}
+
+.nav__logo {
+  width: 7rem;
+  height: 2rem;
+  margin-right: 6rem;
+  z-index: 1000;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.nav__list li a {
+  padding: 0 0.125rem;
+  font-size: var(--font-size-normal);
+  border-radius: var(--border-radius-normal);
+  color: #525252;
+
+  &:hover {
+    font-weight: var(--font-weight-medium);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px rgba(68, 76, 231, 0.12);
+  }
+
+  &:disabled {
+    color: #a3a3a3;
+  }
+}
+
+.nav_mobile,
+.nav_btn-toggle-menu {
+  display: none;
+}
+
+.nav_mobile {
+  position: fixed;
+  top: 0;
+  left: 13.875rem;
+  z-index: 100;
+}
+
+.nav_btn-desktop {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 0.625rem 1rem;
+  border-radius: var(--border-radius-normal);
+  font-weight: var(--font-weight-medium);
+  box-shadow: var(--shadow-box);
+}
+
+.btn:nth-child(2):hover {
+  background-color: var(--hover-blue-color);
+}
+
+.nav_btn-desktop .btn:nth-child(2) {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.nav_btn-desktop .btn:nth-child(1) {
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  &:hover {
+    color: #0a0a0a;
+    background-color: #fafafa;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px rgba(68, 76, 231, 0.12);
+  }
+
+  &disabled {
+    background-color: #f5f5f5;
+    color: #a3a3a3;
+  }
+}
+
+@media (min-width: 20rem) and (max-width: 70.75rem) {
+  header {
+    padding: 0 2rem;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .nav_desktop .nav__list,
+  .nav_btn-desktop {
+    display: none;
+  }
+
+  .nav_btn-toggle-menu svg:nth-child(2) {
+    display: none;
+  }
+
+  .nav_btn-toggle-menu {
+    display: flex;
+    z-index: 1000;
+
+    &:hover {
+      font-weight: var(--font-weight-medium);
+    }
+
+    &:focus:nth-child(1),
+    &:focus svg:nth-child(2) {
+      border-radius: var(--border-radius-normal);
+      box-shadow: 0 0 0 4px rgba(68, 76, 231, 0.12);
+    }
+  }
+
+  .nav_mobile.active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding: 1rem;
+    left: 0;
+  }
+
+  .nav_mobile.active .nav__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 4.375rem;
+    left: 3rem;
+  }
+
+  .nav_btn-mobile {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      width: 20.4375rem;
+      height: 2.75rem;
+      box-shadow: var(--shadow-box);
+      border-radius: var(--border-radius-normal);
+      font-weight: var(--font-weight-medium);
+    }
+
+    :nth-child(1) {
+      border: 1px solid var(--hover-white-color);
+      color: var(--black-color);
+      background-color: var(--white-color);
+    }
+
+    :last-child {
+      color: var(--white-color);
+      background-color: var(--blue-color);
+    }
+  }
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
