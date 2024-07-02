@@ -1,0 +1,211 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #f9fafb 0%, #d2d6db 100%);
+}
+
+._404-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/abstract-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6rem;
+}
+
+._404-hero_section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+._404-hero_section-content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+._404-hero_section-content-text h1 {
+  color: #4338ca;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+._404-hero_section-content-text h2 {
+  color: #171717;
+  font-size: 3.75rem;
+}
+
+._404-hero_section-content-text p {
+  color: #525252;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+._404-hero_cta-btn {
+  width: 10.8125rem;
+  height: 3.75rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #4338ca;
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #3730a3;
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    color: #a3a3a3;
+    cursor: not-allowed;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 36.25rem) and (max-width: 64rem) {
+  ._404-page {
+    padding: 1rem;
+  }
+
+  ._404-hero_section-content-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 20rem) and (max-width: 37.5rem) {
+  ._404-page {
+    padding: 0.5rem;
+  }
+
+  ._404-hero_section-content {
+    align-items: center;
+  }
+
+  ._404-hero_section-content-text h2 {
+    font-size: 2.25rem;
+  }
+
+  ._404-hero_section-content-text p {
+    font-size: 1rem;
+  }
+
+  ._404-hero_cta-btn {
+    width: 19.9375rem;
+  }
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
