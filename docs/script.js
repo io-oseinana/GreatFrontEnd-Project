@@ -2,7 +2,7 @@ const projectContainer = document.querySelector('.project-container');
 const searchInput = document.querySelector('#search');   
 async function getProject() {
     try {
-        const res = await fetch('./projects.json');
+        const res = await fetch('projects.json');
         const data = await res.json();
         console.log(data);
 
