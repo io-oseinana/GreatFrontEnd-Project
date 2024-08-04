@@ -1,0 +1,342 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+/* Prevent font size inflation */
+html {
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a {
+text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  color: currentcolor;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+	background: tranparent;
+	border: none;
+	outline: none;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+      147.52deg,
+      rgb(249 250 251 / 100%) 0%,
+      rgb(210 214 219 / 100%) 100%
+    );
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  min-height: 100vh
+}
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.page-body {
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
+}
+
+.content {
+    align-items: center;
+  background: linear-gradient(
+      176.17deg,
+      rgb(249 250 251 / 100%) 0%,
+      rgb(237 240 243 / 100%) 100%
+    );
+    border-radius: .375rem;
+    box-shadow: 
+    0 .25rem .375rem -0.125rem rgb(0 0 0 / 5%),
+    0 .625rem .9375rem -0.1875rem rgb(0 0 0 / 10%);
+    display: flex;
+  height: 100%;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.section-hero {
+  border-radius: .5rem
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.wrapper-hero-message{
+  align-items:flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  width: 30.5rem;
+}
+
+
+.text-pair {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+
+  h1 {
+    color: #171717;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 3.75rem;
+  }
+
+  p {
+    color: #525252;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+}
+
+.cta-button-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-start;
+  width: 21.4375rem;
+}
+
+.cta-button {
+    align-items: center;
+  border-radius: .25rem;
+  box-shadow: 
+    0 .0625rem .125rem 0 rgb(0 0 0 / 6%),
+    0 .0625rem .1875rem 0 rgb(0 0 0 / 10%);
+    display: flex;
+    gap: .625rem;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    width: 10.9688rem;
+
+    &:focus {
+      box-shadow: 0 0 0 .25rem rgb(68 76 231 / 12%);
+    }
+  
+    &:disabled {
+      background: #f5f5f5;
+      color: #a3a3a3;
+      cursor: not-allowed;
+    }
+
+    span {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.75rem;
+      padding: 0 .125rem;
+    }
+}
+
+.primary-button {
+  background: #fff;
+  border: .0625rem solid #e5e5e5;
+  border-width: .0313rem;
+  color: #171717;
+
+  &:hover {
+    background: #fafafa;
+  }
+}
+
+.secondary-button {
+  background: #4338ca;
+  border-radius: .25rem;
+  color: #fff;
+
+  &:hover {
+    background: #3730a3;
+  }
+}
+
+.wrapper-hero-image{
+  height: 32.875rem;   
+}
+
+.wrapper-hero-image img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.credits {
+  bottom: 1.5rem;
+  color: #777;
+  font-size: .6875rem;
+  left: 1.5rem;
+  position: fixed;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+@media (width >= 32.1875rem) and (width <= 65.625rem) {
+  .hero-section {
+    height: 100%;
+  }
+
+  .page-body {
+    height: auto;
+  }
+  
+ .wrapper {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 1rem;
+ }
+
+ .wrapper-hero-message {
+  width: 100%;
+ }
+
+ .text-pair h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+ }
+
+ .cta-button-container {
+  width: 28.625rem;
+ }
+
+ .wrapper-hero-image{
+  height: 100%;   
+}
+
+}
+
+@media (width >= 18.4375rem)and (width <= 32.125rem){
+  .content {
+    border-radius: .25rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem .75rem;
+  }
+
+  .wrapper-hero-message {
+    gap: 2rem;
+    width: 100%;
+
+  }
+
+  .text-pair {
+    gap: 1rem;
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;    
+    }
+  }
+
+  .cta-button-container {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .cta-button {
+    gap: .375rem;
+    padding: .75rem 1.25rem;
+    width: 100%;
+
+    span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+    }
+  }
+
+  .wrapper-hero-image {
+    height: 16.5rem
+  }
+}

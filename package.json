@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/package'",
+  "name": "hero-section-simple",
+  "version": "1.0.0",
+  "description": "<!-- Use Ctrl/Cmd + Shift + V in VS Code to preview this Markdown file. -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint --config eslint.config.js .",
+    "lint:css": "stylelint '**/*.css' --fix",
+    "lint:html": "htmlhint '**/*.html'",
+    "lint:html:fix": "htmlhint --config .htmlhintrc '**/*.html' | htmlhint-fix",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix && npm run lint:html:fix",
+    "start": "npm start "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lhci/cli": "^0.13.0",
+    "eslint": "^9.3.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}
