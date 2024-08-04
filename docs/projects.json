@@ -183,7 +183,7 @@
         "projectID": "pro11",
         "projectName": "Features Section (Side image - left)" ,
         "image": "./imgs/Left-features-section-side-image.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image-stater/",
+        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/",
         "skills": [
             {
                 "skillName": "HTML",
@@ -200,7 +200,7 @@
         "projectID": "pro12",
         "projectName": "Features Section (Side image - right)" ,
         "image": "./imgs/Right-features-section-side-image.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image-stater/",
+        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/feature-right",
         "skills": [
             {
                 "skillName": "HTML",
