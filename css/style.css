@@ -1,0 +1,307 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+}
+
+.features-section-grid {
+  background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+}
+
+.page-body {
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px -2px rgb(0 0 0 / 0.05),
+    0px 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 96px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 160px;
+
+  .text-pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 0px 40px;
+
+    .subheading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #4338ca;
+    }
+
+    .heading {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 48px;
+      text-align: center;
+      color: #171717;
+      text-wrap: wrap;
+    }
+  }
+
+  .supporting-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #525252;
+  }
+}
+
+.features {
+  display: grid;
+  column-gap: 32px;
+  row-gap: 48px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  grid-column: span 4 / span 4;
+  width: 384px;
+
+  .thumbnail-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.1);
+
+    svg {
+      color: #4338ca;
+    }
+  }
+
+  .text-pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #171717;
+    }
+
+    .feature-description {
+      color: #525252;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .features-section {
+    padding: 64px 16px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .features {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  .row {
+    /* grid-column: span 4 / span 4; */
+    width: 100%;
+  }
+}
+
+@media (width <= 480px) {
+  .content {
+    border-radius: 4px;
+  }
+
+  .features-section {
+    gap: 48px;
+    padding: 48px 12px;
+  }
+
+  .features-container {
+    gap: 48px;
+  }
+
+  .header {
+    padding: 0;
+
+    .text-pair {
+      padding: 0;
+
+      .heading {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    .supporting-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .features {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .row {
+    grid-column: span 4 / span 4;
+  }
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d30808;
+  grid-column: span 8;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
