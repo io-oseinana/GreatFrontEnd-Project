@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,34 +11,112 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- 
-      Get the finest curated abstracts delivered weekly to your inbox
-      Exclusive access to new abstract images and collections
-      Unlock special promotions only for subscribers
-      Regular doses of artistic inspiration
-      Email
-      Enter your email
-      We only send best! no spam.
-      Subscribe
-      We only send you the best! No spam. -->
-
+    <main>
+      <section class="newsletter-section-container">
+        <article class="page-body">
+          <div class="content">
+            <div class="newsletter-section">
+              <div class="container">
+                <div class="newsletter-content">
+                  <div class="heading-check-items">
+                    <header class="header">
+                      <h1 class="heading">
+                        Get the finest curated abstracts delivered weekly to
+                        your inbox
+                      </h1>
+                      <ul class="check-item" role="list">
+                        <li class="row">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"
+                            ></path>
+                          </svg>
+                          <div class="body">
+                            <p>
+                              Exclusive access to new abstract images and
+                              collections
+                            </p>
+                          </div>
+                        </li>
+                        <li class="row">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"
+                            ></path>
+                          </svg>
+                          <div class="body">
+                            <p>
+                              Unlock special promotions only for subscribers
+                            </p>
+                          </div>
+                        </li>
+                        <li class="row">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"
+                            ></path>
+                          </svg>
+                          <div class="body">
+                            <p>Regular doses of artistic inspiration</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                  <div class="email-form">
+                    <form action="" class="email-capture">
+                      <div class="input-field">
+                        <div class="input-label">
+                          <!-- <label for="email">Email</label> -->
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                          />
+                        </div>
+                      </div>
+                      <p class="hint-text" aria-label="hidden">
+                        Please enter a valid email address
+                      </p>
+                      <p class="supporting-text">
+                        We only send you the best! No spam.
+                      </p>
+                      <button type="submit">
+                        <p class="text-padding">Subscribe</p>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="image-content">
+                  <img
+                    src="./img/abstract.jpg"
+                    alt="Banner image for newsletter section"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
     <!-- Attribute this challenge to yourself! -->
     <div class="credits">
       A challenge by
@@ -49,7 +126,7 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
+        >Osei-Bonsu Isaac</a
       >.
     </div>
     <script src="js/index.js"></script>
