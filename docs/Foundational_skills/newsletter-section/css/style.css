@@ -99,7 +99,7 @@ body {
   background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
   .page-body {
     padding: 16px;
 
@@ -123,7 +123,6 @@ body {
           justify-content: center;
           align-items: center;
           gap: 16px;
-          flex-grow: 1;
           padding: 0px 12px;
 
           .newsletter-content {
@@ -131,7 +130,7 @@ body {
             flex-direction: column;
             gap: 48px;
 
-            .heading-check-items {
+            .header {
               display: flex;
               flex-direction: column;
               gap: 32px;
@@ -167,7 +166,6 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     gap: 12px;
-                    flex-grow: 1;
 
                     p {
                       font-family: "Noto Sans", sans-serif;
@@ -180,7 +178,132 @@ body {
                 }
               }
             }
+
+            .email-form {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+
+              .email-capture {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .input-field {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 6px;
+
+                  .input-label {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    input {
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      align-self: stretch;
+                      background-color: #fafafa;
+                      padding: 10px 14px;
+                      border-radius: 4px;
+                      border-width: 1px;
+                      border-style: solid;
+                      border-color: #e5e5e5;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 20px;
+                      color: #737373;
+                      outline: none;
+
+                      &:not(:placeholder-shown) {
+                        color: #171717;
+                      }
+                      &:focus {
+                        box-shadow: 0px 0px 0px 4px rgba(2, 2, 95, 0.12),
+                          0px 1px 2px 0
+                            rgb(
+                              0.062745101749897 0.0941176488995552
+                                0.1568627506494522 / 0.05
+                            ),
+                          0px 0px 0px 1px rgb(1, 1, 97);
+                      }
+
+                      &:disabled {
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #f5f5f5;
+                      }
+                    }
+                  }
+                }
+
+                .hint-text {
+                  display: none;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #dc2626;
+                }
+
+                button {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 4px;
+                  align-self: stretch;
+                  background-color: #4338ca;
+                  padding: 10px 14px;
+                  border-radius: 4px;
+                  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06),
+                    0px 1px 3px 0 rgb(0 0 0 / 0.1);
+
+                  &:hover {
+                    background-color: #3730a3;
+                  }
+
+                  &:focus {
+                    box-shadow: 0px 0px 0px 4px
+                      rgb(
+                        0.2666666805744171 0.2980392277240753 0.9058823585510254 /
+                          0.12
+                      );
+                  }
+
+                  &:disabled {
+                    background-color: #f5f5f5;
+                    color: #a3a3a3;
+                  }
+
+                  .text-padding {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #ffffff;
+                  }
+                }
+              }
+
+              .supporting-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #525252;
+              }
+            }
           }
+        }
+      }
+
+      .image-content {
+        align-self: stretch;
+        height: 288px;
+
+        img {
+          width: 311px;
+          height: 288.243896484375px;
+          object-fit: cover;
+          border-radius: 5.689024448394775px;
         }
       }
     }
