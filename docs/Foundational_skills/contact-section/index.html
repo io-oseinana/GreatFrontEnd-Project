@@ -1,26 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hero Section | GreatFrontEnd Projects</title>
+    <title>Contact Section | GreatFrontEnd Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/favicon.ico" sizes="any" />
   </head>
   <body>
-    <!-- Talk to our team
-      We're committed to delivering the support you require to make your experience as smooth as possible.
-      123 Maple Street, Springfield, IL, USA
-      +1 (650) 555-0198
-      hello@abstractly.com
+    <section
+      class="flex flex-col bg-gradient-to-b from-gray-50 to-[#d2d6db] w-full h-full"
+    >
+      <article class="flex p-4">
+        <div
+          class="flex flex-col justify-center bg-white rounded-md boxShadow-1xl"
+        >
+          <div class="flex items-center gap-16 p-24">
+            <div class="flex items-center gap-8">
+              <div class="flex flex-col gap-12">
+                <div class="flex flex-col justify-center gap-5">
+                  <h1
+                    class="font-semibold text-6xl text-neutral-900 leading-[60px]"
+                  >
+                    Talk to our team
+                  </h1>
+                  <p class="font-normal text-xl leading-7 text-neutral-600">
+                    We're committed to delivering the support you require to
+                    make your experience as smooth as possible.
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center gap-6">
+                  <div class="flex gap-1">
+                    <p class="flex items-center gap-3">
+                      <span class="flex items-center justify-center w-12 h-12 bg-white rounded-full boxShadow-icon">
+                        <svg
+                          class="text-indigo-700 w-[22px] h-[18px]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M21 19H23V21H1V19H3V4C3 3.44772 3.44772 3 4 3H14C14.5523 3 15 3.44772 15 4V19H19V11H17V9H20C20.5523 9 21 9.44772 21 10V19ZM5 5V19H13V5H5ZM7 11H11V13H7V11ZM7 7H11V9H7V7Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span> 123 Maple Street, Springfield, IL, USA </span>
+                    </p>
+                  </div>
+                  <div class="flex gap-1">
+                    <p class="flex items-center gap-3">
+                      <span class="flex items-center justify-center w-12 h-12 bg-white rounded-full boxShadow-icon">
+                        <svg
+                          class="text-indigo-700 w-[22px] h-[18px]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span> +1 (650) 555-0198 </span>
+                    </p>
+                  </div>
+                  <div class="flex gap-1">
+                    <p class="flex items-center gap-3">
+                      <span class="flex items-center justify-center w-12 h-12 bg-white rounded-full boxShadow-icon">
+                        <svg
+                          class="text-indigo-700 w-[22px] h-[18px]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span> hello@abstractly.com </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- 
+     
       Name
       Your name
       This is a hint text to help user.

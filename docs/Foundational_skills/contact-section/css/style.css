@@ -1,5 +1,6 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -7,8 +8,15 @@ body {
     sans-serif;
   min-height: 100vh;
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+} 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
