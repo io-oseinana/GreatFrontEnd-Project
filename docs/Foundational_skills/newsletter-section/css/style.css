@@ -9,7 +9,7 @@ body {
 
 * {
     box-sizing: border-box;
-    transition: all 0.25s ease
+    transition: all 0.25s ease-in-out;
 }
 
 .newsletter-section {
@@ -74,6 +74,10 @@ li svg {
 
 .toast__content__badge--error {
     color: #991b1b;
+}
+
+.toast__content__badge--success {
+    color: #15803d;
 }
 
 .toast__content--success {
