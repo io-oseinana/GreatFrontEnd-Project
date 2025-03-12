@@ -1,300 +1,302 @@
 [
-
-    {
-        "projectID": "pro1",
-        "projectName": "Testimonial Card" ,
-        "image": "./imgs/testimonial-card.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/testimonial-card/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-
-    {
-        "projectID": "pro2",
-        "projectName": "Blog Card" ,
-        "image": "./imgs/blog-card.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/blog-card/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro3",
-        "projectName": "Profile Card",
-        "image": "./imgs/profile-card.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/profile-card/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro4",
-        "projectName": "404 Section" ,
-        "image": "./imgs/404-section.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/404-section/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro5",
-        "projectName": "Navbar Component" ,
-        "image": "./imgs/navbar-component.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/navbar-component/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro6",
-        "projectName": "Footer (Multi Column)" ,
-        "image": "./imgs/footer-multi-column.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-multi-column/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro7",
-        "projectName": "Footer Section (Simple)" ,
-        "image": "./imgs/footer-section-simple.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-section-simple",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro8",
-        "projectName": "Hero Section (Feature bullets)" ,
-        "image": "./imgs/hero-section-feature-bullets.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-feature-bullets/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro9",
-        "projectName": "Pricing Section (Single)" ,
-        "image": "./imgs/pricing-section-single.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-single/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro10",
-        "projectName": "Hero Section (Simple)" ,
-        "image": "./imgs/hero-section-simple.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-simple",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro11",
-        "projectName": "Features Section (Side image - left)" ,
-        "image": "./imgs/Left-features-section-side-image.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro12",
-        "projectName": "Features Section (Side image - right)" ,
-        "image": "./imgs/Right-features-section-side-image.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/feature-right",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro13",
-        "projectName": "Team Section" ,
-        "image": "./imgs/team-section.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/team-section/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro14",
-        "projectName": "Pricing Section (Tiers)" ,
-        "image": "./imgs/pricing-section-tiers.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-tiers/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro15",
-        "projectName": "Features Section (Grid)" ,
-        "image": "./imgs/features-section-grid.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-grid/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    },
-    {
-        "projectID": "pro16",
-        "projectName": "Statistics Section" ,
-        "image": "./imgs/statistics-section.jpg",
-        "projectLiveDemo":"https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/statistics-section/",
-        "skills": [
-            {
-                "skillName": "HTML",
-                "HTMLImage": "./imgs/tech-stack/html.png"
-
-            },
-            {
-                "skillName": "CSS",
-                "CSSImage": "./imgs/tech-stack/css.png"
-            },
-            {
-                "skillName": "JavaScript",
-                "JavaScriptImage": "./imgs/tech-stack/javascript.png"
-            }
-        ]
-    }
+  {
+    "projectID": "pro1",
+    "projectName": "Testimonial Card",
+    "image": "./imgs/testimonial-card.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/testimonial-card/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro2",
+    "projectName": "Blog Card",
+    "image": "./imgs/blog-card.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/blog-card/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro3",
+    "projectName": "Profile Card",
+    "image": "./imgs/profile-card.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/profile-card/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro4",
+    "projectName": "404 Section",
+    "image": "./imgs/404-section.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/404-section/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro5",
+    "projectName": "Navbar Component",
+    "image": "./imgs/navbar-component.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/navbar-component/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro6",
+    "projectName": "Footer (Multi Column)",
+    "image": "./imgs/footer-multi-column.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-multi-column/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro7",
+    "projectName": "Footer Section (Simple)",
+    "image": "./imgs/footer-section-simple.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-section-simple",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro8",
+    "projectName": "Hero Section (Feature bullets)",
+    "image": "./imgs/hero-section-feature-bullets.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-feature-bullets/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro9",
+    "projectName": "Pricing Section (Single)",
+    "image": "./imgs/pricing-section-single.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-single/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro10",
+    "projectName": "Hero Section (Simple)",
+    "image": "./imgs/hero-section-simple.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-simple",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro11",
+    "projectName": "Features Section (Side image - left)",
+    "image": "./imgs/Left-features-section-side-image.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro12",
+    "projectName": "Features Section (Side image - right)",
+    "image": "./imgs/Right-features-section-side-image.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/feature-right",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro13",
+    "projectName": "Team Section",
+    "image": "./imgs/team-section.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/team-section/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro14",
+    "projectName": "Pricing Section (Tiers)",
+    "image": "./imgs/pricing-section-tiers.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-tiers/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro15",
+    "projectName": "Features Section (Grid)",
+    "image": "./imgs/features-section-grid.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-grid/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro16",
+    "projectName": "Statistics Section",
+    "image": "./imgs/statistics-section.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/statistics-section/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  },
+  {
+    "projectID": "pro17",
+    "projectName": "Newsletter Section",
+    "image": "./imgs/newsletter-section.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/newsletter-section/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "./imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "./imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+      }
+    ]
+  }
 ]
