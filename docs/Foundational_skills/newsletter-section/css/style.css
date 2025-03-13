@@ -85,6 +85,20 @@ li svg {
     color: #15803d;
 }
 
+
+@media screen and (width >= 768px) {
+    .newsletter-section {
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
+    }
+}
+
+@media screen and (width >= 1440px) {
+    .newsletter-section {
+        box-shadow: 0 4px 6px -2px rgb(0 0 0 / 5%), 0 10px 15px -3px rgb(0 0 0 / 10%);
+    }
+
+}
+
 .credits {
     bottom: 24px;
     color: #777;
