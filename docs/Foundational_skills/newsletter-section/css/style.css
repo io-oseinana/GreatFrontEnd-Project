@@ -1,93 +1,5 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    transition: all 0.25s ease;
-}
-
-/* Prevent font size inflation */
-html {
-    text-size-adjust: none;
-    text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-    margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-    line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-    text-wrap: balance;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    color: currentcolor;
-    text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-    display: block;
-    max-width: 100%;
-}
-
-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-    scroll-margin-block: 5ex;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
     font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -95,217 +7,96 @@ body {
     min-height: 100vh;
 }
 
-.newsletter-section-container {
-    background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+* {
+    box-sizing: border-box;
+    transition: all 0.25s ease-in-out;
 }
 
-@media (width <= 430px) {
-    .page-body {
-        padding: 16px;
+.newsletter-section {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
 
-        .content {
-            background-color: #fff;
-            border-radius: 4px;
-            box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
-            display: flex;
-            flex-direction: column;
+li svg {
+    flex-shrink: 0;
+}
 
-            .newsletter-section {
-                align-items: center;
-                display: flex;
-                gap: 64px;
-                justify-content: center;
-                padding: 32px 0;
+.input__field::placeholder {
+    color: #737373;
+}
 
-                .container {
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-                    justify-content: center;
-                    padding: 0 12px;
+.input__field:focus {
+    box-shadow: 0 0 0 1px #444ce7,
+    0 1px 2px rgb(16 24 40 / 5%),
+    0 0 0 4px rgb(68 76 231 / 12%);
+}
 
-                    .newsletter-content {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 48px;
+.input__field--error {
+    border: 1px solid #fca5a5;
+}
 
-                        .header {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 32px;
+.input__field--error:focus {
+    box-shadow: 0 0 0 1px #d92d20,
+    0 0 0 4px rgb(217 45 32 / 12%);
+}
 
-                            .heading {
-                                color: #171717;
-                                font-family: "Noto Sans", sans-serif;
-                                font-size: 30px;
-                                font-weight: 600;
-                                line-height: 36px;
-                            }
+.button {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
+    0 1px 2px rgb(0 0 0 / 6%);
+}
 
-                            .check-item {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 20px;
+.button:focus {
+    box-shadow: 0 0 0 4px rgb(68 76 231 / 12%);
+}
 
-                                .row {
-                                    align-items: center;
-                                    display: flex;
-                                    gap: 12px;
+.button:hover,
+.button:focus {
+    background: #3730a3;
+}
 
-                                    svg {
-                                        background-color: #eef2ff;
-                                        border-radius: 9999px;
-                                        color: #6366f1;
-                                        height: 24px;
-                                        width: 24px;
-                                    }
+.button:disabled {
+    background: #f5f5f5;
+    box-shadow: none;
+    color: #a3a3a3;
+    pointer-events: none;
+}
 
-                                    .body {
-                                        display: flex;
-                                        flex-direction: column;
-                                        gap: 12px;
-                                        justify-content: center;
 
-                                        p {
-                                            color: #525252;
-                                            font-family: "Noto Sans", sans-serif;
-                                            font-size: 18px;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+.toast__content__badge {
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
+    0 1px 2px rgb(0 0 0 / 6%);
+}
 
-                        .email-form {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 16px;
+.toast__content--error {
+    background: #fef2f2;
+    color: #dc2626;
+}
 
-                            .email-capture {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 16px;
+.toast__content__badge--error {
+    color: #991b1b;
+}
 
-                                .input-field {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 6px;
+.toast__content__badge--success {
+    color: #15803d;
+}
 
-                                    .input-label {
-                                        display: flex;
-                                        flex-direction: column;
-                                        gap: 6px;
+.toast__content--success {
+    background: #f0fdf4;
+    color: #15803d;
+}
 
-                                        input {
-                                            align-items: center;
-                                            align-self: stretch;
-                                            background-color: #fafafa;
-                                            border-color: #e5e5e5;
-                                            border-radius: 4px;
-                                            border-style: solid;
-                                            border-width: 1px;
-                                            color: #737373;
-                                            display: flex;
-                                            font-size: 14px;
-                                            font-weight: 400;
-                                            gap: 8px;
-                                            line-height: 20px;
-                                            outline: none;
-                                            padding: 10px 14px;
 
-                                            &:not(:placeholder-shown) {
-                                                color: #171717;
-                                            }
-
-                                            &:focus {
-                                                box-shadow: 0 0 0 4px rgb(2 2 95 / 12%),
-                                                0 1px 2px 0 rgb(
-                                                        0.062745101749897 0.0941176488995552 0.1568627506494522 / 5%
-                                                ),
-                                                0 0 0 1px rgb(1 1 97);
-                                            }
-
-                                            &:disabled {
-                                                border-color: #f5f5f5;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                            }
-                                        }
-                                    }
-                                }
-
-                                .hint-text {
-                                    color: #dc2626;
-                                    display: none;
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    line-height: 20px;
-                                }
-
-                                button {
-                                    align-items: center;
-                                    align-self: stretch;
-                                    background-color: #4338ca;
-                                    border-radius: 4px;
-                                    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%),
-                                    0 1px 3px 0 rgb(0 0 0 / 10%);
-                                    display: flex;
-                                    gap: 4px;
-                                    justify-content: center;
-                                    padding: 10px 14px;
-
-                                    &:hover {
-                                        background-color: #3730a3;
-                                    }
-
-                                    &:focus {
-                                        box-shadow: 0 0 0 4px rgb(
-                                                0.2666666805744171 0.2980392277240753 0.9058823585510254 /
-                          12%
-                                        );
-                                    }
-
-                                    &:disabled {
-                                        background-color: #f5f5f5;
-                                        color: #a3a3a3;
-                                    }
-
-                                    .text-padding {
-                                        color: #fff;
-                                        font-size: 14px;
-                                        font-weight: 500;
-                                        line-height: 20px;
-                                    }
-                                }
-                            }
-
-                            .supporting-text {
-                                color: #525252;
-                                font-size: 16px;
-                                font-weight: 400;
-                                line-height: 24px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .image-content {
-                align-self: stretch;
-                height: 288px;
-
-                img {
-                    border-radius: 5.689024448394775px;
-                    height: 288.243896484375px;
-                    object-fit: cover;
-                    width: 311px;
-                }
-            }
-        }
+@media screen and (width >= 768px) {
+    .newsletter-section {
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
     }
+}
+
+@media screen and (width >= 1440px) {
+    .newsletter-section {
+        box-shadow: 0 4px 6px -2px rgb(0 0 0 / 5%), 0 10px 15px -3px rgb(0 0 0 / 10%);
+    }
+
 }
 
 .credits {

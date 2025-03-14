@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": [
+      2
+    ],
+    "string-quotes": "double",
+    "color-hex-length": "short",
+    "max-nesting-depth": [
+      3,
+      {
+        "ignore": [
+          "blockless-at-rules"
+        ]
+      }
+    ],
+    "selector-max-id": 1,
+    "block-no-empty": true,
+    "no-duplicate-selectors": true,
+    "declaration-block-trailing-semicolon": "always",
+    "property-no-unknown": true,
+    "order/properties-alphabetical-order": true
+  }
+}
+
