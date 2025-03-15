@@ -20,12 +20,6 @@ body {
     box-shadow: 0 0 0 4px rgb(68 76 231 / 12%);
 }
 
-/* .faq__accordion__toggle-icon.active-icon { */
-
-/*    display: block; */
-
-/* } */
-
 .faq__accordion__content {
     max-height: 0;
     opacity: 0;
