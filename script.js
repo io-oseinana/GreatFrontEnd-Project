@@ -1,10 +1,10 @@
 const projectContainer = document.querySelector('.project-container');
-const searchInput = document.querySelector('#search');   
+const searchInput = document.querySelector('#search');
+
 async function getProject() {
     try {
         const res = await fetch('projects.json');
         const data = await res.json();
-        console.log(data);
 
         data.forEach(project => {
             const projectCard = document.createElement('a');
@@ -24,7 +24,6 @@ async function getProject() {
 
             projectImageDiv.appendChild(projectImage);
 
-        
 
             const projectSkillsImg = document.createElement('div');
             projectSkillsImg.classList.add('project-skills-img');
@@ -35,7 +34,7 @@ async function getProject() {
             const projectTitle = document.createElement('h2');
             projectTitle.textContent = project.projectName;
             projectTitle.classList.add('project-title');
-            
+
             projectDetails.appendChild(projectTitle);
 
             project.skills.forEach(skill => {
@@ -58,8 +57,7 @@ async function getProject() {
 
 
         })
-    }
-    catch (err) {
+    } catch (err) {
         console.error(err);
     }
 }
