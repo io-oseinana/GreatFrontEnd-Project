@@ -7,11 +7,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -23,11 +23,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -39,11 +39,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -55,11 +55,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -71,15 +71,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -91,15 +91,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -111,11 +111,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -127,11 +127,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -143,11 +143,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -159,11 +159,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -175,11 +175,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -191,11 +191,11 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       }
     ]
   },
@@ -207,15 +207,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -227,15 +227,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -247,15 +247,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -267,15 +267,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -287,15 +287,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -307,15 +307,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   },
@@ -327,15 +327,15 @@
     "skills": [
       {
         "skillName": "HTML",
-        "HTMLImage": "./imgs/tech-stack/html.png"
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
       },
       {
         "skillName": "CSS",
-        "CSSImage": "./imgs/tech-stack/css.png"
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
       },
       {
         "skillName": "JavaScript",
-        "JavaScriptImage": "./imgs/tech-stack/javascript.png"
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
   }
