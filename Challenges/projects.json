@@ -2,8 +2,8 @@
   {
     "projectID": "pro1",
     "projectName": "Testimonial Card",
-    "image": "./imgs/testimonial-card.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/testimonial-card/",
+    "image": "./Marketing/testimonial-card/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/testimonial-card/",
     "skills": [
       {
         "skillName": "HTML",
@@ -18,8 +18,8 @@
   {
     "projectID": "pro2",
     "projectName": "Blog Card",
-    "image": "./imgs/blog-card.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/blog-card/",
+    "image": "./Marketing/blog-card/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/blog-card/",
     "skills": [
       {
         "skillName": "HTML",
@@ -34,8 +34,8 @@
   {
     "projectID": "pro3",
     "projectName": "Profile Card",
-    "image": "./imgs/profile-card.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/profile-card/",
+    "image": "./Marketing/profile-card/designs/profile-card.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/profile-card/",
     "skills": [
       {
         "skillName": "HTML",
@@ -50,8 +50,8 @@
   {
     "projectID": "pro4",
     "projectName": "404 Section",
-    "image": "./imgs/404-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/404-section/",
+    "image": "./Marketing/404-section/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/404-section/",
     "skills": [
       {
         "skillName": "HTML",
@@ -66,8 +66,8 @@
   {
     "projectID": "pro5",
     "projectName": "Navbar Component",
-    "image": "./imgs/navbar-component.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/navbar-component/",
+    "image": "./Marketing/navbar-component/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/navbar-component/",
     "skills": [
       {
         "skillName": "HTML",
@@ -86,8 +86,8 @@
   {
     "projectID": "pro6",
     "projectName": "Footer (Multi Column)",
-    "image": "./imgs/footer-multi-column.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-multi-column/",
+    "image": "./Marketing/footer-multi-column/designs/Default - Desktop.jpg"7,
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/footer-multi-column/",
     "skills": [
       {
         "skillName": "HTML",
@@ -106,8 +106,8 @@
   {
     "projectID": "pro7",
     "projectName": "Footer Section (Simple)",
-    "image": "./imgs/footer-section-simple.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/footer-section-simple",
+    "image": "./Marketing/footer-section-simple/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/footer-section-simple",
     "skills": [
       {
         "skillName": "HTML",
@@ -122,8 +122,8 @@
   {
     "projectID": "pro8",
     "projectName": "Hero Section (Feature bullets)",
-    "image": "./imgs/hero-section-feature-bullets.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-feature-bullets/",
+    "image": "./Marketing/hero-section-feature-bullets/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/hero-section-feature-bullets/",
     "skills": [
       {
         "skillName": "HTML",
@@ -138,8 +138,8 @@
   {
     "projectID": "pro9",
     "projectName": "Pricing Section (Single)",
-    "image": "./imgs/pricing-section-single.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-single/",
+    "image": "./Marketing/pricing-section-single/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/pricing-section-single/",
     "skills": [
       {
         "skillName": "HTML",
@@ -154,8 +154,8 @@
   {
     "projectID": "pro10",
     "projectName": "Hero Section (Simple)",
-    "image": "./imgs/hero-section-simple.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/hero-section-simple",
+    "image": "./Marketing/hero-section-simple/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/hero-section-simple",
     "skills": [
       {
         "skillName": "HTML",
@@ -170,8 +170,8 @@
   {
     "projectID": "pro11",
     "projectName": "Features Section (Side image - left)",
-    "image": "./imgs/Left-features-section-side-image.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/",
+    "image": "./Marketing/features-section-side-image/designs/Left - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/features-section-side-image/",
     "skills": [
       {
         "skillName": "HTML",
@@ -186,8 +186,8 @@
   {
     "projectID": "pro12",
     "projectName": "Features Section (Side image - right)",
-    "image": "./imgs/Right-features-section-side-image.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-side-image/feature-right",
+    "image": "./Marketing/features-section-side-image/designs/Right - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/features-section-side-image/feature-right",
     "skills": [
       {
         "skillName": "HTML",
@@ -202,8 +202,8 @@
   {
     "projectID": "pro13",
     "projectName": "Team Section",
-    "image": "./imgs/team-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/team-section/",
+    "image": "./Marketing/team-section/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/team-section/",
     "skills": [
       {
         "skillName": "HTML",
@@ -222,8 +222,8 @@
   {
     "projectID": "pro14",
     "projectName": "Pricing Section (Tiers)",
-    "image": "./imgs/pricing-section-tiers.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/pricing-section-tiers/",
+    "image": "./Marketing/pricing-section-tiers/designs/Annual - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/pricing-section-tiers/",
     "skills": [
       {
         "skillName": "HTML",
@@ -242,8 +242,8 @@
   {
     "projectID": "pro15",
     "projectName": "Features Section (Grid)",
-    "image": "./imgs/features-section-grid.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/features-section-grid/",
+    "image": "./Marketing/features-section-grid/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/features-section-grid/",
     "skills": [
       {
         "skillName": "HTML",
@@ -262,8 +262,8 @@
   {
     "projectID": "pro16",
     "projectName": "Statistics Section",
-    "image": "./imgs/statistics-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/statistics-section/",
+    "image": "./Marketing/statistics-section/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/statistics-section/",
     "skills": [
       {
         "skillName": "HTML",
@@ -282,8 +282,8 @@
   {
     "projectID": "pro17",
     "projectName": "Newsletter Section",
-    "image": "./imgs/newsletter-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/newsletter-section/",
+    "image": "./Marketing/newsletter-section/designs/Default - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/newsletter-section/",
     "skills": [
       {
         "skillName": "HTML",
@@ -302,8 +302,8 @@
   {
     "projectID": "pro18",
     "projectName": "Contact Section",
-    "image": "./imgs/contact-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/contact-section/",
+    "image": "./Marketing/contact-section/designs/Default - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/contact-section/",
     "skills": [
       {
         "skillName": "HTML",
@@ -322,8 +322,8 @@
   {
     "projectID": "pro19",
     "projectName": "FAQ Section",
-    "image": "./imgs/faq-section.jpg",
-    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Foundational_skills/faq-section/",
+    "image": "./Marketing/faq-section/designs/Expanded - Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/faq-section/",
     "skills": [
       {
         "skillName": "HTML",
