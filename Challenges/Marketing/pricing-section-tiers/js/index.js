@@ -3,7 +3,7 @@
   This is because, getting the  json data from directory will not work on the local server. 
 */
 
-fetch("/data/pricingData.json")
+fetch("data/pricingData.json")
     .then((response) =>
         response.json().then((pricingData) => {
             const subscriptionContainer =
@@ -199,5 +199,4 @@ fetch("/data/pricingData.json")
         const errorDiv = document.createElement('div');
         errorDiv.classList.add('error');
         errorDiv.textContent = `Error: ${error.message} Error fetching data. Please try again later.`;
-        teamContent.appendChild(errorDiv);
     });
