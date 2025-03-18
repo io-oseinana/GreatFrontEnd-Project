@@ -338,5 +338,25 @@
         "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
+  },
+  {
+    "projectID": "pro19",
+    "projectName": "Testimonials Section",
+    "image": "Challenges/Marketing/testimonials-section-section/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/Marketing/testimonials-section/",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
+      }
+    ]
   }
 ]
