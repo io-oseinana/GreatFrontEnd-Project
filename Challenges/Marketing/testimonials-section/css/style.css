@@ -36,6 +36,12 @@ body {
     .testimonial-card:not(:first-child) {
         margin-top: 0;
     }
+
+    .testimonial-card:nth-child(5),
+    .testimonial-card:nth-child(7) {
+        margin-top: -24px;
+    }
+
 }
 
 @media screen and (width >= 1024px) {
