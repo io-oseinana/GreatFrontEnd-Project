@@ -5,7 +5,7 @@ fetch('testimonials.json')
     .then(testimonials => {
         testimonials.map((testimonial) => {
             const testimonialCard = document.createElement('figure');
-            testimonialCard.className = `testimonial-card flex flex-col justify-center gap-4 bg-white p-6 rounded-lg border border-solid border-neutral-200 w-full break-inside-avoid `
+            testimonialCard.className = `testimonial-card flex flex-col gap-4 bg-white p-6 rounded-lg border border-solid border-neutral-200 w-full break-inside-avoid `
 
             const testimonialAuthor = document.createElement('figcaption');
             testimonialAuthor.className = `flex items-center gap-4`;
