@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hero Section | GreatFrontEnd Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Logo Marquee Section | GreatFrontEnd Projects</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <link href="css/style.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="img/favicon.ico" rel="icon" sizes="any"/>
+</head>
+<body>
+<main class="max-w-[1440px] mx-auto p-4 w-full">
+    <section aria-describedby="logo-marquee-section"
+             class="w-full bg-white rounded md:rounded-md py-[264px] px-0 md:py-[356px] md:px-[8px] lg:py-[196px]">
+        <div class="flex flex-col gap-8 py-12 px-4  md:py-16 px-0 lg:py-24">
+            <h2 class="font-medium text-base text-center text-neutral-600">Used by teams that you love</h2>
+            <div class="overflow-hidden">
+                <div class="flex gap-[78.5px] md:gap-2 w-[2000%]">
+                    <div class="flex gap-[78.5px] md:gap-2 lg:gap-8 py-[2px] md:p-0 marquee">
+                        <img alt="Wan Nain's logo" class="h-auto w-[218px]" src="img/logo.svg">
+                        <img alt="Robinwood's Logo" class="h-auto w-[218px]" src="img/logo-1.svg">
+                        <img alt="Sawpdo's logo" class="h-auto w-[218px]" src="img/logo-3.svg">
+                        <img alt="Diamond's Logo" class="h-auto w-[218px]" src="img/logo-5.svg">
+                        <img alt="Air Car's logo" class="h-auto w-[218px]" src="img/logo-6.svg">
+                        <img alt="Makro hard's logo" class="h-auto w-[218px]" src="img/logo-7.svg">
+                        <img alt="Wirang's logo" class="h-auto w-[218px]" src="img/logo-4.svg">
+                        <img alt="Bitterfly's logo" class="h-auto w-[218px]" src="img/logo-2.svg">
+                    </div>
+                    <div aria-hidden="true" class="flex gap-[78.5px] md:gap-2 lg:gap-8 py-[2px] md:p-0 marquee">
+                        <img alt="Wan Nain's logo" class="h-auto w-[218px]" src="img/logo.svg">
+                        <img alt="Robinwood's Logo" class="h-auto w-[218px]" src="img/logo-1.svg">
+                        <img alt="Sawpdo's logo" class="h-auto w-[218px]" src="img/logo-3.svg">
+                        <img alt="Diamond's Logo" class="h-auto w-[218px]" src="img/logo-5.svg">
+                        <img alt="Air Car's logo" class="h-auto w-[218px]" src="img/logo-6.svg">
+                        <img alt="Makro hard's logo" class="h-auto w-[218px]" src="img/logo-7.svg">
+                        <img alt="Wirang's logo" class="h-auto w-[218px]" src="img/logo-4.svg">
+                        <img alt="Bitterfly's logo" class="h-auto w-[218px]" src="img/logo-2.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
-  </head>
-  <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
-      >.
-    </div>
-    <script src="js/index.js"></script>
-  </body>
+<!-- Attribute this challenge to yourself! -->
+<div class="credits">
+    A challenge by
+    <a
+            href="https://www.greatfrontend.com/projects?ref=challenges"
+            target="_blank"
+    >GreatFrontEnd Projects</a
+    >. Built by
+    <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
+    >Osei-Bonsu Isaac</a
+    >.
+</div>
+<script src="js/index.js"></script>
+</body>
 </html>
