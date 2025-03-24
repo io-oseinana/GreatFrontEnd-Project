@@ -378,5 +378,25 @@
         "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
       }
     ]
+  },
+  {
+    "projectID": "pro20",
+    "projectName": "Marketing Landing Page",
+    "image": "Challenges/Marketing/marketing-landing-page/designs/Desktop.jpg",
+    "projectLiveDemo": "https://io-oseinana.github.io/GreatFrontEnd-Project/Challenges/Marketing/marketing-landing-page",
+    "skills": [
+      {
+        "skillName": "HTML",
+        "HTMLImage": "Challenges/imgs/tech-stack/html.png"
+      },
+      {
+        "skillName": "CSS",
+        "CSSImage": "Challenges/imgs/tech-stack/css.png"
+      },
+      {
+        "skillName": "JavaScript",
+        "JavaScriptImage": "Challenges/imgs/tech-stack/javascript.png"
+      }
+    ]
   }
 ]
