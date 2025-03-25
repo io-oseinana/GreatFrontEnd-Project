@@ -6,7 +6,7 @@ async function getProject() {
         const res = await fetch('projects.json');
         const data = await res.json();
 
-        data.forEach(project => {
+        data.reverse().forEach(project => {
             const projectCard = document.createElement('a');
             projectCard.classList.add('project-card');
             projectCard.id = project.projectID;
