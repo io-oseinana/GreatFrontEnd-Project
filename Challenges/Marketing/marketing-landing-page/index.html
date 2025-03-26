@@ -17,10 +17,10 @@
 <body>
 <!--navbar-->
 <header class="navbar fixed top-0 left-0 right-0 z-10 pt-4 pt-0 lg:px-28 flex items-center justify-between gap-20 backdrop-blur">
-    <div class="h-full">
-        <div class="flex items-center px-4 md:px-8 lg:gap-24 lg:py-3">
+    <div class="w-full h-full">
+        <div class="flex justify-between items-center px-4 md:px-8 lg:gap-24 lg:py-3">
             <div class="w-28 h-8 flex">
-                <img alt="Abstractly's logo" src="img/abstractly.png"/>
+                <img alt="Abstractly's logo" class="w-[163px] h-8" src="img/abstractly.png"/>
             </div>
             <div class="flex justify-between items-center gap-24 lg:py-3 hidden lg:flex">
                 <div class="flex items-center gap-8 hidden lg:flex w-[650px]">
@@ -69,6 +69,7 @@
     </div>
 </header>
 
+<!--Mobile nav manu -->
 <nav class="fixed too-0 bottom-0 w-[300px] h-full z-50 py-8 px-4 overflow-x-hidden flex flex-col gap-6 bg-white"
      id="slideout-menu">
     <div class="flex items-center justify-between">
@@ -119,7 +120,7 @@
     </div>
 </nav>
 <main class="container p-4 mx-auto rounded md:rounded-md mt-[84px] bg-white">
-    <!--    hero section -->
+    <!--    Hero section -->
 
     <section aria-labelledby="hero-section"
              class="hero-section flex flex-col lg:flex-row justify-center items-center gap-12 md:gap-8 px-3 md:px-4 py-12 md:py-16 lg:p-24 rounded-lg">
@@ -149,6 +150,39 @@
         <img alt="Banner for hero section"
              class="object-cover rounded-lg md:rounded-2xl w-full lg:w-[696px] h-full"
              src="img/prism.png">
+    </section>
+
+    <!-- Logo Marquee section   -->
+
+    <section aria-describedby="logo-marquee-section"
+             class="w-full bg-white rounded md:rounded-md py-[264px] px-0 md:py-[356px] md:px-[8px] lg:py-[196px]">
+        <div class="flex flex-col gap-8 py-12 px-4  md:py-16 px-0 lg:py-24">
+            <h2 class="font-medium text-base text-center text-neutral-600">Used by teams that you love</h2>
+            <div class="overflow-hidden">
+                <div class="flex gap-[78.5px] md:gap-2 w-[2000%]">
+                    <div class="flex gap-[78.5px] md:gap-2 lg:gap-8 py-[2px] md:p-0 marquee">
+                        <img alt="Wan Nain's logo" class="h-auto w-[218px]" src="img/logo/logo.svg">
+                        <img alt="Robinwood's Logo" class="h-auto w-[218px]" src="img/logo/logo-1.svg">
+                        <img alt="Sawpdo's logo" class="h-auto w-[218px]" src="img/logo/logo-3.svg">
+                        <img alt="Diamond's Logo" class="h-auto w-[218px]" src="img/logo/logo-5.svg">
+                        <img alt="Air Car's logo" class="h-auto w-[218px]" src="img/logo/logo-6.svg">
+                        <img alt="Makro hard's logo" class="h-auto w-[218px]" src="img/logo/logo-7.svg">
+                        <img alt="Wirang's logo" class="h-auto w-[218px]" src="img/logo/logo-4.svg">
+                        <img alt="Bitterfly's logo" class="h-auto w-[218px]" src="img/logo/logo-2.svg">
+                    </div>
+                    <div aria-hidden="true" class="flex gap-[78.5px] md:gap-2 lg:gap-8 py-[2px] md:p-0 marquee">
+                        <img alt="Wan Nain's logo" class="h-auto w-[218px]" src="img/logo/logo.svg">
+                        <img alt="Robinwood's Logo" class="h-auto w-[218px]" src="img/logo/logo-1.svg">
+                        <img alt="Sawpdo's logo" class="h-auto w-[218px]" src="img/logo/logo-3.svg">
+                        <img alt="Diamond's Logo" class="h-auto w-[218px]" src="img/logo/logo-5.svg">
+                        <img alt="Air Car's logo" class="h-auto w-[218px]" src="img/logo/logo-6.svg">
+                        <img alt="Makro hard's logo" class="h-auto w-[218px]" src="img/logo/logo-7.svg">
+                        <img alt="Wirang's logo" class="h-auto w-[218px]" src="img/logo/logo-4.svg">
+                        <img alt="Bitterfly's logo" class="h-auto w-[218px]" src="img/logo/logo-2.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 

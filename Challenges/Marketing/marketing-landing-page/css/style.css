@@ -94,6 +94,28 @@ body {
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
 }
 
+/* marquee animation */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 78.5px));
+    }
+}
+
+.marquee {
+    animation: marquee 15s linear infinite;
+}
+
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+
 @media screen and (width >= 769px) {
     .container {
         box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
@@ -104,6 +126,16 @@ body {
 @media screen and (width >= 1440px) {
     .container {
         box-shadow: 0 4px 6px -2px rgb(0 0 0 / 5%), 0 10px 15px -3px rgb(0 0 0 / 10%);
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(calc(-100% - 32px));
+        }
     }
 
 }
