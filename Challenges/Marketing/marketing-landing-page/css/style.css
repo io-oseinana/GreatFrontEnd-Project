@@ -126,6 +126,30 @@ body {
 }
 
 
+#monthlyPlanBtn.active,
+#annualPlanBtn.active {
+    border-color: #e5e5e5;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 6%);
+    flex-grow: 1;
+}
+
+.pricing-tiers__plan > div:nth-child(1),
+.pricing-tiers__plan > div:nth-child(3) {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+
+.pricing-tiers__plan > div:nth-child(2) {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.pricing-tiers__plan svg {
+    flex-shrink: 0;
+}
+
+
 @media screen and (width >= 769px) {
     .content {
         box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
