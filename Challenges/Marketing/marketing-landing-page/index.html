@@ -15,6 +15,144 @@
     <link href="img/favicon.ico" rel="icon" sizes="any"/>
 </head>
 <body>
+<!--navbar-->
+<header class="navbar fixed top-0 left-0 right-0 z-10 pt-4 lg:px-28 h-[68px]">
+    <div class="h-[68px] lg:h-full">
+        <div class="flex justify-between items-center px-4 md:px-8 lg:gap-24 lg:py-3">
+            <div class="w-28 h-8 flex">
+                <img alt="Abstractly's logo" src="img/abstractly.png"/>
+            </div>
+            <div class="flex items-center gap-24 lg:py-3 hidden lg:flex">
+                <div class="flex items-center gap-8 hidden lg:flex">
+                    <a class="link font-medium text-base text-neutral-600 hover:text-[#171717] focus:text-[#171717]"
+                       href="/">Home</a>
+                    <a class="link font-medium text-base text-neutral-600 hover:text-[#171717] focus:text-[#171717]"
+                       href="/">Features</a>
+                    <a class="link font-medium text-base text-neutral-600 hover:text-[#171717] focus:text-[#171717]"
+                       href="/">Pricing</a>
+                    <a class="link font-medium text-base text-neutral-600 hover:text-[#171717] focus:text-[#171717]"
+                       href="/">About
+                        us</a>
+                    <a class="link font-medium text-base text-neutral-600 hover:text-[#171717] focus:text-[#171717]"
+                       href="/">Contact</a>
+                </div>
+                <div class="flex gap-4">
+                    <button
+                            class="button button--secondary  button--navbar-learn bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 w-full"
+                            type="button">
+                        Learn more
+                    </button>
+                    <button
+                            class="button button--primary button--navbar-pricing bg-indigo-700 px-4 py-2.5 rounded text-white w-full"
+                            type="button">
+                        See pricing
+                    </button>
+                </div>
+            </div>
+            <button
+                    aria-label="Open mobile menu"
+                    class="navbar__btn--open flex justify-center items-center gap-2 rounded lg:hidden"
+                    id="mobile-menu-button"
+                    type="button">
+                <svg
+                        fill="none"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2.5 3.33333H17.5V5H2.5V3.33333ZM2.5 9.16667H17.5V10.8333H2.5V9.16667ZM2.5 15H17.5V16.6667H2.5V15Z"
+                            fill="#525252"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<nav class="fixed too-0 bottom-0 w-[300px] h-full z-50 py-8 px-4 overflow-x-hidden flex flex-col gap-6 bg-white"
+     id="slideout-menu">
+    <div class="flex items-center justify-between">
+        <div class="">
+            <img alt="Abstractly's logo" class="h-8 w-auto" src="img/abstractly.png"/>
+        </div>
+        <button
+                aria-label="Close mobile menu"
+                class="navbar__btn--close rounded"
+                id="mobile-close-menu-button"
+                type="button">
+            <svg
+                    fill="none"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M10.0006 8.82208L14.1253 4.69727L15.3038 5.87577L11.1791 10.0006L15.3038 14.1253L14.1253 15.3038L10.0006 11.1791L5.87577 15.3038L4.69727 14.1253L8.82208 10.0006L4.69727 5.87577L5.87577 4.69727L10.0006 8.82208Z"
+                        fill="#525252"/>
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col gap-2 flex-1">
+        <a class="link text-base text-neutral-500 hover:text-indigo-700 focus:text-indigo-700 py-0.5 px-3"
+           href="/">Home</a>
+        <a class="link text-base text-neutral-500 hover:text-indigo-700 focus:text-indigo-700 py-0.5 px-3"
+           href="/">Features</a>
+        <a class="link text-base text-neutral-500 hover:text-indigo-700 focus:text-indigo-700 py-0.5 px-3"
+           href="/">Pricing</a>
+        <a class="link text-base text-neutral-500 hover:text-indigo-700 focus:text-indigo-700 py-0.5 px-3"
+           href="/">About
+            us</a>
+        <a class="link text-base text-neutral-500 hover:text-indigo-700 focus:text-indigo-700 py-0.5 px-3"
+           href="/">Contact</a>
+    </div>
+    <div class="flex flex-col gap-4">
+        <button
+                class="button button--secondary button--navbar-learn bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 w-full"
+                type="button">
+            Learn more
+        </button>
+        <button
+                class="button button--primary button--navbar-pricing bg-indigo-700 px-4 py-2.5 rounded text-white w-full"
+                type="button">
+            See pricing
+        </button>
+    </div>
+</nav>
+<main class="container p-4 mx-auto rounded md:rounded-md mt-[84px] bg-white">
+    <!--    hero section -->
+
+    <section aria-labelledby="hero-section"
+             class="hero-section flex flex-col lg:flex-row justify-center items-center gap-12 md:gap-8 px-3 md:px-4 py-12 md:py-16 lg:p-24 rounded-lg">
+        <div class="flex flex-col justify-center gap-8 md:gap-16 w-full lg:w-[488px]">
+            <div class="flex flex-col justify-center gap-4 md:gap-6">
+                <h1 class="font-semibold text-4xl md:text-5xl lg:text-6xl text-neutral-900">
+                    Well crafted abstract images
+                </h1>
+                <p class="font-normal text-lg md:text-xl text-neutral-600">
+                    High quality abstract images for your projects, wallpaper and
+                    presentations.
+                </p>
+            </div>
+            <div class="flex gap-4 md:gap-8 w-full md:w-[458px] lg:w-[383px]">
+                <div class="flex justify-center items-center gap-1.5 md:gap-2.5 w-full">
+                    <button class="button button--secondary bg-white px-5 md:px-6 py-3 md:py-4 rounded border-[0.5px] border-solid border-neutral-200 font-medium text-base md:text-lg text-neutral-900">
+                        Learn more
+                    </button>
+                </div>
+                <div class="flex justify-center items-center gap-1.5 md:gap-2.5 w-full">
+                    <button class="button button--primary px-5 md:px-6 py-3 md:py-4 rounded font-medium text-base md:text-lg bg-indigo-700 font-medium text-base md:text-lg text-white">
+                        See pricing
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img alt="Banner for hero section"
+             class="object-cover rounded-lg md:rounded-2xl w-full lg:w-[696px] h-full"
+             src="img/prism.png">
+    </section>
+</main>
+
+
 <!-- Attribute this challenge to yourself! -->
 <div class="credits">
     A challenge by
