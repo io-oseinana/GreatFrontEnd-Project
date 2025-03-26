@@ -149,6 +149,28 @@ body {
     flex-shrink: 0;
 }
 
+.faq__accordion__button:focus {
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px rgb(68 76 231 / 12%);
+}
+
+.faq__accordion__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.faq__accordion__content.active {
+    display: block;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.faq__support__card {
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
+}
+
 
 @media screen and (width >= 769px) {
     .content {
