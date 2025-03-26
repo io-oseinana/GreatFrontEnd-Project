@@ -171,6 +171,65 @@ body {
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 6%), 0 4px 6px -1px rgb(0 0 0 / 10%);
 }
 
+li svg {
+    flex-shrink: 0;
+}
+
+.toast__content--error {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.toast__content__badge--error {
+    color: #991b1b;
+}
+
+.toast__content__badge--success {
+    color: #15803d;
+}
+
+.toast__content--success {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.input__field:focus {
+    box-shadow: 0 0 0 1px #444ce7,
+    0 1px 2px rgb(16 24 40 / 5%),
+    0 0 0 4px rgb(68 76 231 / 12%);
+}
+
+.toast__content__badge {
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
+    0 1px 2px rgb(0 0 0 / 6%);
+}
+
+.input__field:placeholder {
+    color: #737373;
+}
+
+.input__field--error {
+    border: 1px solid #fca5a5;
+}
+
+.input__field--error:focus {
+    box-shadow: 0 0 0 1px #d92d20,
+    0 0 0 4px rgb(217 45 32 / 12%);
+}
+
+.input__error {
+    bottom: -24px;
+    color: #d92d20;
+    display: none;
+    font-size: 14px;
+    position: absolute;
+}
+
+.input__error--bottom {
+    bottom: 0;
+}
+
 
 @media screen and (width >= 769px) {
     .content {

@@ -15,6 +15,16 @@
     <link href="img/favicon.ico" rel="icon" sizes="any"/>
 </head>
 <body>
+<!--Toast notification-->
+<div class="toast fixed left-0 right-0 w-full top-10 hidden" id="toaster">
+    <div class="flex justify-center">
+        <div class="toast__content max-w-max mx-4 flex items-center justify-center gap-3 pl-1 pr-2.5 pt-1 pb-1 rounded-[2000px] text-sm font-medium">
+            <div class="toast__content__badge flex flex-row items-center bg-white px-2.5 py-0.5 rounded-full"></div>
+            <div class="toast__content__message"></div>
+        </div>
+    </div>
+</div>
+
 <!--navbar-->
 <header class="navbar fixed top-0 left-0 right-0 z-10 pt-4 pt-0 lg:px-28 flex items-center justify-between gap-20 backdrop-blur">
     <div class="w-full h-full">
@@ -120,8 +130,8 @@
     </div>
 </nav>
 <main class="content mx-auto rounded md:rounded-md mt-[84px] bg-white">
-    <!--    Hero section -->
 
+    <!--    Hero section -->
     <section aria-labelledby="hero-section"
              class="hero-section flex flex-col lg:flex-row justify-center items-center gap-12 md:gap-8 px-3 md:px-4 py-12 md:py-16 lg:p-24 rounded-lg">
         <div class="flex flex-col justify-center gap-8 md:gap-16 w-full lg:w-[488px]">
@@ -153,7 +163,6 @@
     </section>
 
     <!-- Logo Marquee section   -->
-
     <section aria-describedby="logo-marquee-section"
              class="w-full bg-white rounded md:rounded-md py-12 md:py-16 lg:py-24">
         <div class="flex flex-col gap-8 px-4">
@@ -186,7 +195,6 @@
     </section>
 
     <!-- Feature grid section -->
-
     <section aria-labelledby="features-grid" class="px-3 md:px-4 py-12 md:py-16 lg:py-24">
         <div class="flex flex-col gap-12 md:gap-16">
             <header class="flex flex-col gap-5 lg:px-40">
@@ -936,16 +944,16 @@
                             answered</p>
                     </header>
 
-                    <!--                    <div class="flex justify-end">-->
-                    <!--                        <button class="hidden rounded  text-sm"-->
-                    <!--                                id="expand-all"-->
-                    <!--                                type="button">Expand All-->
-                    <!--                        </button>-->
-                    <!--                        <button class="rounded text-sm"-->
-                    <!--                                id="collapse-all"-->
-                    <!--                                type="button">Collapse All-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
+                    <div class="flex justify-end">
+                        <button class="hidden rounded  text-sm"
+                                id="expand-all"
+                                type="button">Expand All
+                        </button>
+                        <button class="rounded text-sm"
+                                id="collapse-all"
+                                type="button">Collapse All
+                        </button>
+                    </div>
 
                     <!-- Accordion content -->
                     <div class="flex flex-col gap-7">
@@ -1239,6 +1247,114 @@
             </div>
         </div>
     </section>
+
+    <!-- Newsletter section   -->
+    <section aria-describedby="newsletter-section"
+             class="flex flex-col bg-white rounded md:rounded-md newsletter-section">
+        <div class="py-8 md:px-4 md:py-16 lg:px-0 lg:py-24">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-16 lg:gap-8 px-3 md:px-0 lg:px-8 lg:py-0">
+                <div class="flex flex-col gap-12 w-full lg:max-w-[592px]">
+                    <div class="flex flex-col gap-8 md:gap-16">
+                        <h2 class="text-3xl md:text-5xl font-semibold text-neutral-900">
+                            Get the finest curated abstracts delivered weekly to your inbox
+                        </h2>
+
+                        <ul class="flex flex-col gap-5 p-0">
+                            <li class="flex items-center gap-3">
+                                <svg
+                                        fill="none"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#EEF2FF"/>
+                                    <path
+                                            d="M9.64715 15.5245L10.0007 15.878L10.3543 15.5245L19.1931 6.68562L19.9002 7.39272L10.0007 17.2922L4.34383 11.6354L5.05093 10.9283L9.64715 15.5245Z"
+                                            fill="#6366F1"
+                                            stroke="#6366F1"/>
+                                </svg>
+                                <span class="font-normal text-lg text-neutral-600">
+                                    Exclusive access to new abstract images and collections
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg
+                                        fill="none"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#EEF2FF"/>
+                                    <path
+                                            d="M9.64715 15.5245L10.0007 15.878L10.3543 15.5245L19.1931 6.68562L19.9002 7.39272L10.0007 17.2922L4.34383 11.6354L5.05093 10.9283L9.64715 15.5245Z"
+                                            fill="#6366F1"
+                                            stroke="#6366F1"/>
+                                </svg>
+                                <span class="font-normal text-lg text-neutral-600">
+                                      Unlock special promotions only for subscribers
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg
+                                        fill="none"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#EEF2FF"/>
+                                    <path
+                                            d="M9.64715 15.5245L10.0007 15.878L10.3543 15.5245L19.1931 6.68562L19.9002 7.39272L10.0007 17.2922L4.34383 11.6354L5.05093 10.9283L9.64715 15.5245Z"
+                                            fill="#6366F1"
+                                            stroke="#6366F1"/>
+                                </svg>
+                                <span class="font-normal text-lg text-neutral-600">
+                                      Regular doses of artistic inspiration
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="flex flex-col md:flex-row gap-4" id="newsletter-form">
+                        <div class="flex flex-col gap-3 md:gap-4">
+                            <div class="flex flex-col gap-1.5 w-full md:w-[334px]">
+                                <label class="hidden" for="email-input">Email</label>
+                                <input
+                                        aria-describedby="email-error"
+                                        class="input__field bg-neutral-50 px-3.5 py-2.5 rounded border border-solid border-neutral-200 outline-none font-normal text-sm text-neutral-500"
+                                        id="email-input"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        type="email"
+                                />
+                                <p class="font-normal text-sm text-red-600 hidden" id="email-error"></p>
+                            </div>
+                            <p class="text-base text-neutral-600 font-normal">
+                                We only send you the best! No spam.
+                            </p>
+                        </div>
+                        <button
+                                class="button flex justify-center items-center w-full md:w-[98px] h-10 font-medium text-sm text-white bg-indigo-700 px-3.5 py-2.5 rounded text-white"
+                                id="submit-button"
+                                type="submit"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <img alt="Newsletter section banner"
+                     class="w-full h-72 md:h-[608px] object-cover rounded md:rounded-xl lg:w-[592px] pr-2 md:pr-4 lg:pr-0"
+                     src="img/abstract.jpg"/>
+            </div>
+        </div>
+    </section>
+    
 </main>
 
 
