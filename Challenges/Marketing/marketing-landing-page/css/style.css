@@ -111,7 +111,7 @@ body {
 }
 
 
-.marquee:hover {
+.marquee-content:hover .marquee {
     animation-play-state: paused;
 }
 
